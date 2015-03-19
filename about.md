@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+My name is David Crook and I currently live in Northern Colorado.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Sometimes, you can find me at [http://crookster.org](http://crookster.org).
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[firstname.lastname@gmail.com](mailto:firstname.lastname@gmail.com) - you'll need to edit those placeholders in the address.
