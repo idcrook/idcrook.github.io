@@ -13,3 +13,5 @@ Sometimes, you can find me at [http://crookster.org](http://crookster.org).
 ### Contact me
 
 [firstname.lastname@gmail.com](mailto:firstname.lastname@gmail.com) - you'll need to edit those placeholders in the address.
+
+Also, refer to the icons below for relevant social media links.
