@@ -8,10 +8,11 @@ My name is David Crook and I currently live in Northern Colorado.
 
 ### More Information
 
-Sometimes, you can find me at [http://crookster.org](http://crookster.org).
+Sometimes [http://crookster.org](http://crookster.org) is up.
 
 ### Contact me
 
-[firstname.lastname@gmail.com](mailto:firstname.lastname@gmail.com) - you'll need to edit those placeholders in the address.
+Email [firstname.lastname@gmail.com](mailto:firstname.lastname@gmail.com) - you
+will need to edit those placeholders in the address with my real details.
 
 Also, refer to the icons below for relevant social media links.
