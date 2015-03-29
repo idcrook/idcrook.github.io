@@ -3,8 +3,6 @@ layout: post
 title: Introducing React Native
 ---
 
-# Introducing React Native
-
 [react-native](http://facebook.github.io/react-native/) was recently released on github. Yah for open-source!  It allows a developer to create iOS apps using [React.js](http://facebook.github.io/react/) components in `javascript`.
 
 I was able to walk through [the tutorial found at raywenderlich.com](http://www.raywenderlich.com/99473/introducing-react-native-building-apps-javascript) in about four hours. Many of the mistakes I had made along the way were javascript typos.
