@@ -26,3 +26,5 @@ Some other gotchas I encountered:
 ### Where is a copy of the completed code?
 
 I uploaded my code at [@dpcrook/propertyfinder-introduction-to-react-native](https://github.com/dpcrook/propertyfinder-introduction-to-react-native) on github.
+
+![screenshot of PropertyFinder app](/images/PropertyFinder-screenshot_Introducing-React-Native.png)
