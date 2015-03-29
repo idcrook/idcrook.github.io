@@ -15,15 +15,16 @@ React Native bundles your javascript script code and serves it through it throug
 
 ## How can I try this?
 
-You need to be on a Mac with Xcode. [My seven year old Mac](https://support.apple.com/kb/SP4?locale=en_US) was running Yosemite 10.10.3 beta with Xcode 6.2.
+You need to be on a Mac with Xcode. [My seven year old Mac](https://support.apple.com/kb/SP4?locale=en_US) was running Yosemite 10.10.3 beta with Xcode 6.2.  You'll need to install `node` and `watchman` for react-native. You'll want to use [Homebrew](http://brew.sh/).  The tutorial mentions this. 
 
- - you'll need to install `node` and `watchman` for react-native. you'll want to use [Homebrew](http://brew.sh/).  The tutorial mentions this.
+Some other gotchas I encountered:
+
  - my react packager would encounter an error and need to be restarted every time I made a local git commit
  - I was able to get geolocation to work in the simulator after closing Xcode and the iOS simulator and relaunching everything.  It was throwing an error before this.
 
 
 I used the tutorial and its zipfile to get started, but that was even before I had checked [the docs](http://facebook.github.io/react-native/docs/getting-started.html#content), which also cover this.
 
-### Where is your copy?
+### Where is a copy of the completed code?
 
 I uploaded my code at [@dpcrook/propertyfinder-introduction-to-react-native](https://github.com/dpcrook/propertyfinder-introduction-to-react-native) on github.
