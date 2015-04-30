@@ -8,7 +8,7 @@ title: Using Microsoft's new Code editor as Node debugger (on a Mac)
 I was able to attach to a node debugger process that [Grunt](http://gruntjs.com/) was already spawning.
 
 
-## What other step did I need on my Mac?
+## What other steps did I need on my Mac?
 
 I followed the basic [debug instructions](https://code.visualstudio.com/Docs/debugging) to configure Code's debugger.  Since I was going to be attaching to a debugger process, I didn't really need to configure the 'Launch' task. OK, let's save the settings file and start the debugger.
 
@@ -33,6 +33,6 @@ Strange.  I shouldn't need to (re)-launch `node` in debug mode...  Oh, whoops. F
 
 ## Summary
 
-Some of this is quite new and rough (if you believe all the caveats shared), but I found it to be very functional for my needs.  Node debugging support is built-in.
+Some of this is quite new and rough (if you believe [all the caveats](https://code.visualstudio.com/Docs/whyvscode#_next-steps)), but I found it to be very functional for my needs.  Node debugging support is built-in.
 
-There are many other browser-based debuggers out there as well to choose from.  And I use Emacs as my preferred editor with some forays onto Atom Editor, so I am not sure whether I will stay with VSCode, but it is a promising launch.  And it is nice to know that it is around and will be improving with the times...
+There are many other browser-based debuggers out there to choose from.  And I use Emacs as my preferred editor with some forays onto Atom Editor, so I am not sure whether I will stay with VSCode, but it is a promising launch.  And it is nice to know that it is around and will be improving with the times...
