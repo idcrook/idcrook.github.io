@@ -3,7 +3,7 @@ layout: post
 title: GoCode Colorado 2015 and Pikr Knows
 ---
 
-I have been busy the past few weeks, as system architect and full-stack developer on the [winning GoCode Colorado 2015 team](http://blogs.denverpost.com/tech/2015/05/22/go-code-colorado-when-big-data-developers-and-government-collide/17286/) [Pikr Knows](http://pikrknows.com).  I also came up with its name, which seems to be easy to remember...
+I have been busy the past few weeks, as system architect and full-stack developer on the [winning GoCode Colorado 2015 team](http://blogs.denverpost.com/tech/2015/05/22/go-code-colorado-when-big-data-developers-and-government-collide/17286/), with our app named [Pikr Knows](http://pikrknows.com).  I also came up with its name, which seems to be easy to remember...
 
 
 ## What is Pikr Knows?
