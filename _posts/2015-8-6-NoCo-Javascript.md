@@ -16,5 +16,5 @@ should be interesting.
 
 If you are in Northern Colorado like Fort Collins or Loveland and have interest
 in learning about the local Javascript community, you should check
-(http://www.meetup.com/NoCo-JavaScript-Meetup/) out.  We have once-monthly
+http://www.meetup.com/NoCo-JavaScript-Meetup/ out.  We have once-monthly
 meetings, and the organizer Jeff is a great guy.
