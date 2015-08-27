@@ -13,8 +13,8 @@ My name is David Crook and I currently live in often-sunny Northern Colorado.
  - Twitter: [@idcrook](https://twitter.com/idcrook)
  - Email: [david.crook@gmail.com](mailto:david.crook@gmail.com) - email for resume
 
-Sometimes [http://www.crookster.org](http://www.crookster.org) is up.  Use icons below for associated networks.
-
 ![Sun's up! pic I took](/images/suns_up_2012-JAN-30.jpg)
 
 [\[source\]](https://instagram.com/p/mOSfY/)
+
+Sometimes [http://www.crookster.org](http://www.crookster.org) is up.  Use icons below for associated networks.
