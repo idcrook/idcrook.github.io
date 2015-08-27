@@ -17,4 +17,5 @@ My name is David Crook and I currently live in often-sunny Northern Colorado.
 
 [\[source\]](https://instagram.com/p/mOSfY/)
 
-Sometimes [http://www.crookster.org](http://www.crookster.org) is up.  Use icons below for associated networks.
+Sometimes [http://www.crookster.org](http://www.crookster.org) is up.  Use icons below for those networks.
+
