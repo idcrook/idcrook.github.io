@@ -9,9 +9,7 @@ github-pages flavor of jekyll.
 
 [Docker jekyll](https://github.com/jekyll/docker-jekyll) at github.
 
-
 Run on OS X
-
 
 ```bash
 eval "$(docker-machine env default)"
