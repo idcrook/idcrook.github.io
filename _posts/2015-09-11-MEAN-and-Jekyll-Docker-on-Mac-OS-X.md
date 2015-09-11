@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docker on Mac OS X
+title: MEAN and Jekyll Docker on Mac OS X
 ---
 
 A problem I ran into after installing OS X El Capitan GM on my Mac mini
@@ -11,13 +11,17 @@ settings, and switch to a default of assigning IP through DHCP-- which doesn't
 really work when you are bare on the Internet.
 
 Anyway, it gave me a chance to inspect some of the Docker containers and their
-resource usage under OS X.
+resource usage under OS X. One issue I noticed was that the CPU utilization was
+pretty high, and the temperature in the rack of the components on my Mac mini
+were way higher than I would have liked...
 
 ## Polling for live updates
 
 Polling the filesystem is resource intensive. It can consume extra CPU when
-other types of notification techniques that something changed consume less My
-Mac mini in the cloud was breathing fire and running *~90C*, which is not a
+other types of notification techniques for informing on when something changed
+consume less.
+
+My Mac mini in the cloud was breathing fire and running *~90C*, which is not a
 good thing.
 
 
@@ -28,21 +32,23 @@ website.  It is a [node.js](https://nodejs.org/en/) server and I run it on a
 Docker container, serving up the site in "production" mode.
 
 The problem with this is that it was still running a polling filesystem watcher
-that looks at all the files inspecting for changes.  However, in production,
-you are not needing to live-reload your local edits; you push the changes to a
-repository, and pull them to deploy.
+that looks at all the files inspecting for changes.  This is very useful in
+development when you are using live-reload to inspect the results of your
+changes. However, in production, you are not needing to live-reload your local
+edits; you push the changes to a repository, and pull them to deploy.
 
 It was a simple enough edit to change the `gruntfile.js` to take the `watch`
 task off the `concurrent` in a new *production* setting.  I made the changes
 and pushed them to the git repository.  And at the server, I pulled and
-restarted the docker container that runs the node.js server.  No change.  It
-was still watching.
+restarted the docker container that runs the node.js server.  *No change.  It
+was still watching.*
 
 **Huh**?  Oh- it is because the `gruntfile.js` was not visible in the
-container.  When I built the container, it added all the files, but now, they
-are not mounted in the running docker image.
+container.  When I built the container, the files were added at the root, but
+now, they are not mounted in the running docker image.  The container has an
+older copy of the `gruntfile.js`.
 
-Fortunately, Docker allows a simple way to add a file as a volume into the
+Fortunately, Docker allows a simple way to add a *file as a volume* into the
 container.
 
 ```
@@ -74,13 +80,17 @@ CPU resources.
 Went from:
 
 ```
-docker run --rm --label=jekyll --label=pages --volume=$(pwd):/srv/jekyll   -t -p 4000:4000 jekyll/pages jekyll serve --force_polling
+docker run --rm --label=jekyll --label=pages \
+  --volume=$(pwd):/srv/jekyll  \
+  -t -p 4000:4000 jekyll/pages jekyll serve --force_polling
 ```
 
 to
 
 ```
-docker run -i --rm --label=jekyll --label=pages --volume=$(pwd):/srv/jekyll   -t -p 4000:4000 jekyll/jekyll:pages jekyll serve
+docker run -i --rm --label=jekyll --label=pages \
+  --volume=$(pwd):/srv/jekyll \
+  -t -p 4000:4000 jekyll/jekyll:pages jekyll serve
 ```
 
 How did I do that? I just found today a nifty little project geared to helping
@@ -93,7 +103,8 @@ Docker host on OS X.
 ## Summary
 
 Now, after looking in the VboxHeadless process that my docker containers were
-running under, it was running with around 70% less CPU activity than before.
+running under, it was running with around **70% less CPU activity** than before.
+
 Another hot problem solved.
 
 
