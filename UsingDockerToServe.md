@@ -14,6 +14,8 @@ Run on OS X
 ```bash
 cd ~/projects/webdev/dpcrook.github.io
 eval "$(docker-machine env default)"
-docker run --rm --label=jekyll --label=pages --volume=$(pwd):/srv/jekyll  \
-           -t -p 4000:4000 jekyll/pages jekyll serve --force_polling
+docker run -i --rm --label=jekyll --label=pages \
+ --volume=$(pwd):/srv/jekyll  \
+ -t -p 4000:4000 jekyll/jekyll:pages jekyll serve
+open http://`docker-machine ip default`:4000
 ```
