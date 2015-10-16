@@ -3,9 +3,9 @@ layout: post
 title: RStudio and rJava on OS X El Capitan
 ---
 
-## Intro to Data Science
-
 I recently started an [Intro to Data Science Workshop](https://www.mysliderule.com/workshops/data-science) and today in our weekly mentor meeting, my mentor and I were running and interactive session in RStudio. He asked my to install a package<sup id="FSelector1">[1](#footnote1)</sup> in `R` so we could look at distinct factors in the `iris` dataset.
+
+## Intro to Java dependency science
 
 The `install.packages("FSelector1")` was unsuccessful, as packages *it* depended on were Java based, and I didn't have java, or the `rJava` package, installed on my MacBook Pro running OS X El Capitan. I told him I would take care of that after we were done with our call.  And so began my descent into a eventually fruitful yak-shaving exercise...
 
