@@ -18,12 +18,12 @@ avatar: https://avatars0.githubusercontent.com/u/461806?v=3&s=140
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
-  facebook:
+  email: david.crook@gmail.com
+  facebook: david.p.crook
   flickr:
   github: dpcrook
   instagram: dpc
-  linkedin:
+  linkedin: davidcrook
   pinterest:
   rss: yes
   twitter: idcrook
@@ -74,3 +74,4 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+    - UsingDockerToServe.md
