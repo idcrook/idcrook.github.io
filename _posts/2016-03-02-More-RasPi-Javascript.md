@@ -3,7 +3,7 @@ layout: post
 title: More RasPi jam with JavaScript
 ---
 
-I am going to be doing another demonstration of the RGB Slider with some Pi's tomorrow at Galvanize in Fort Collins. This one will be over a "Lunch & Learn" in Galvanize's full-stack class.
+I do another demonstration of the RGB Slider with some Pi's at Galvanize in Fort Collins. This one will be over a "Lunch & Learn" in Galvanize's full-stack class.
 
  - [https://github.com/dpcrook/rpi-hw-js-demo](https://github.com/dpcrook/rpi-hw-js-demo)
  - [http://dpcrook.github.io/rpi-hw-js-demo/](http://dpcrook.github.io/rpi-hw-js-demo/)
