@@ -14,11 +14,11 @@ Got it working!
 ![Using smartphone to control the LED color](/images/12Apr2016/IMG_3518.JPG)
 
 RGB LED in mini breadboard
-![RGB LED in mini breadboard](/images/12Apr2016/IMG_3516.JPG)
+![RGB LED in mini breadboard](/images/12Apr2016/IMG_3516.jpg)
 
 Pi's everywhere
-![Multiple Pi's](/images/12Apr2016/IMG_3519.JPG)
+![Multiple Pi's](/images/12Apr2016/IMG_3519.jpg)
 
 Me trying to explain some elements of the client code
-![Multiple Pi's](/images/12Apr2016/IMG_3520.JPG)
+![Multiple Pi's](/images/12Apr2016/IMG_3520.jpg)
 
