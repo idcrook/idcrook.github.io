@@ -19,7 +19,7 @@ Have four tabbed views in mind:
    - Network settings
 
 
-Inspired by https://github.com/dpcrook/OctoControl-iOS
+Inspired by [https://github.com/dpcrook/OctoControl-iOS](https://github.com/dpcrook/OctoControl-iOS)
 
 ## Images
 
