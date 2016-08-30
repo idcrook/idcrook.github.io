@@ -3,7 +3,7 @@ layout: post
 title: .local Networking with ATS in iOS 10
 ---
 
-Discovered today that in iOS 10, `NSAppTransportSecurity` adds a new exception key for `.local` domain accesses.
+Discovered today that in iOS 10, `NSAppTransportSecurity` adds a new exception key for `.local` domain accesses: `NSAllowsLocalNetworking`
 
 
 # .local Networking
