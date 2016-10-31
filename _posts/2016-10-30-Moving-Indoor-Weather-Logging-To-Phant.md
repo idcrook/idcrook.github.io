@@ -18,6 +18,8 @@ There are two LED displays: one for the time, and one for the temperature. The d
 
 ![Display of the time and temperature](/images/time_temp_update.jpg)
 
+The green square hollow prism with a pattern of holes in its top center is the BMP085 sensor, in a 3D-printed case.  And the LED displays are residing in a bespoke case that was designed and printed by **me** -- one of my earliest forays into 3D Printing.
+
 # Updates
 
 The ["old" version](https://github.com/dpcrook/timetemp) (circa Spring 2013) that uploaded to xively.com used old Adafruit python libraries and a EEML XML-based data format. 
@@ -42,7 +44,7 @@ The beauty of open-source python libraries is that you can see the implementatio
 
 ## Pointers to customized source code
 
- - https://github.com/dpcrook/Adafruit_Python_LED_Backpack
- - https://github.com/dpcrook/Adafruit_Python_BMP
- - https://github.com/dpcrook/python-phant 
+ - [https://github.com/dpcrook/Adafruit_Python_LED_Backpack](https://github.com/dpcrook/Adafruit_Python_LED_Backpack)
+ - [https://github.com/dpcrook/Adafruit_Python_BMP](https://github.com/dpcrook/Adafruit_Python_BMP)
+ - [https://github.com/dpcrook/python-phant](https://github.com/dpcrook/python-phant)
    - Found some issues w.r.t. loading from JSON config file, so generated a [PR](https://github.com/matze/python-phant/pull/20)
