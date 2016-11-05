@@ -22,7 +22,7 @@ The green square hollow prism with a pattern of holes in its top center is the B
 
 # Updates
 
-The ["old" version](https://github.com/dpcrook/timetemp) (circa Spring 2013) that uploaded to xively.com used old Adafruit python libraries and a EEML XML-based data format. 
+The ["old" version](https://github.com/idcrook/timetemp) (circa Spring 2013) that uploaded to xively.com used old Adafruit python libraries and a EEML XML-based data format. 
 
 This update moved to the new Adafruit python library versions ([LED Backpack](https://github.com/adafruit/Adafruit_Python_LED_Backpack), [BMP](https://github.com/adafruit/Adafruit_Python_BMP)) and used SFE Phant service for data logging (using [python-phant](https://github.com/matze/python-phant)).
 
@@ -30,7 +30,7 @@ This update moved to the new Adafruit python library versions ([LED Backpack](ht
 
 The **time** python code was a straight port. Method names changed slightly, and the LED API had been updated to be more user friendly. It was a quick port, as I was able to leverage the example code script.
 
- - [my_7segment_clock.py](https://github.com/dpcrook/Adafruit_Python_LED_Backpack/blob/master/examples/my_7segment_clock.py)
+ - [my_7segment_clock.py](https://github.com/idcrook/Adafruit_Python_LED_Backpack/blob/master/examples/my_7segment_clock.py)
 
 ## BMP085 and Data logging
 
@@ -38,13 +38,13 @@ The **temp** port was a little more involved. The BMP sensor python API was basi
 
 A new stream was created using the web form.  After storing the keys along with downloading a JSON file that contained the key settings, the code was updated. 
 
- - [logging_sparkfun.py](https://github.com/dpcrook/Adafruit_Python_BMP/blob/master/examples/logging_sparkfun.py)
+ - [logging_sparkfun.py](https://github.com/idcrook/Adafruit_Python_BMP/blob/master/examples/logging_sparkfun.py)
 
 The beauty of open-source python libraries is that you can see the implementation and even fix any bugs you find in the source itself! I found an issue related to reading in the Phant stream settings from aforementioned JSON file, and was able to update the library source code to workaround it.
 
 ## Pointers to customized source code
 
- - [https://github.com/dpcrook/Adafruit_Python_LED_Backpack](https://github.com/dpcrook/Adafruit_Python_LED_Backpack)
- - [https://github.com/dpcrook/Adafruit_Python_BMP](https://github.com/dpcrook/Adafruit_Python_BMP)
- - [https://github.com/dpcrook/python-phant](https://github.com/dpcrook/python-phant)
+ - [https://github.com/idcrook/Adafruit_Python_LED_Backpack](https://github.com/idcrook/Adafruit_Python_LED_Backpack)
+ - [https://github.com/idcrook/Adafruit_Python_BMP](https://github.com/idcrook/Adafruit_Python_BMP)
+ - [https://github.com/idcrook/python-phant](https://github.com/idcrook/python-phant)
    - Found some issues w.r.t. loading from JSON config file, so generated a [PR](https://github.com/matze/python-phant/pull/20)

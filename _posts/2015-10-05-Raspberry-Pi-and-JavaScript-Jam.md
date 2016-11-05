@@ -11,6 +11,6 @@ I will be presenting. :) 😄
 
 ## Demo with Raspberry Pi and RGB LED
 
-![Photo with mini BB](https://raw.githubusercontent.com/dpcrook/rpi-hw-js-demo/gh-pages/demo_notes/Photo_1-Pi_BB_header_view.jpeg)
+![Photo with mini BB](https://raw.githubusercontent.com/idcrook/rpi-hw-js-demo/gh-pages/demo_notes/Photo_1-Pi_BB_header_view.jpeg)
 
 

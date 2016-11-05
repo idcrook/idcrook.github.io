@@ -12,7 +12,7 @@ github-pages flavor of jekyll.
 Run on OS X
 
 ```bash
-cd ~/projects/webdev/dpcrook.github.io
+cd ~/projects/webdev/idcrook.github.io
 docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
   -it -p 4000:4000 \
     jekyll/jekyll
