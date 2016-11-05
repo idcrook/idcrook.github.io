@@ -12,7 +12,7 @@ Projects may include Raspberry Pi, microcontrollers or other electronics, 3D Pri
    - [First presented](/Raspberry-Pi-and-JavaScript-Jam/) at a [local Meetup](http://www.meetup.com/NoCo-JavaScript-Meetup/events/224542835/)
    - Galvanize [Full-Stack class](/More-RasPi-Javascript/)
    - [Fort Collins Girls Who Code](/Even-More-RasPi-Javascript/)
- - Raspberry Pi time and temperature display ([timetemp](https://github.com/idcrook/timetemp) project on GitHub)
+ - [Raspberry Pi time and temperature display](/Moving-Indoor-Weather-Logging-To-Phant/) ([timetemp](https://github.com/idcrook/timetemp) project on GitHub)
  - Atlas 3D scanner [that I built](/Atlas3D-scanner-ftw/)
  - To be described: OctoPi with webcam on a Lulzbot Mini
  
