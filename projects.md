@@ -21,6 +21,7 @@ Projects may include Raspberry Pi, microcontrollers or other electronics, 3D Pri
  - [Designs of various things, intended for 3D printing](https://github.com/idcrook/psychic-winner) (GitHub)
    - For example: [Bicycle and Car iPhone 6 Plus Mount family](https://github.com/idcrook/psychic-winner/blob/master/iphone_6plus_mount_family/README.md)
  - Some of these designs and others [On thingiverse](http://www.thingiverse.com/dpc/designs)
+
 ## Classes
 
  - [capstone project](https://github.com/idcrook/SR_Foundations_DS_Fall_2015/tree/master/capstone) from [Foundations of Data Science Workshop](https://github.com/idcrook/SR_Foundations_DS_Fall_2015) ([sliderule](https://www.mysliderule.com/workshops/data-science/))
