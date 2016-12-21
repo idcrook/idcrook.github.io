@@ -5,8 +5,8 @@ title: More RasPi jam with JavaScript
 
 I do another demonstration of the RGB Slider with some Pi's at Galvanize in Fort Collins. This one will be over a "Lunch & Learn" in Galvanize's full-stack class.
 
- - [https://github.com/dpcrook/rpi-hw-js-demo](https://github.com/dpcrook/rpi-hw-js-demo)
- - [http://dpcrook.github.io/rpi-hw-js-demo/](http://dpcrook.github.io/rpi-hw-js-demo/)
+ - [https://github.com/idcrook/rpi-hw-js-demo](https://github.com/idcrook/rpi-hw-js-demo)
+ - [http://idcrook.github.io/rpi-hw-js-demo/](http://idcrook.github.io/rpi-hw-js-demo/)
 
 
 ![Ready-to-go Pis](/images/bank_of_pis_ready_to_go.jpg)

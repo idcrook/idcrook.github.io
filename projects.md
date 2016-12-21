@@ -4,19 +4,33 @@ title: Projects
 permalink: /projects/
 ---
 
- - [capstone project](https://github.com/dpcrook/SR_Foundations_DS_Fall_2015/tree/master/capstone) from [Foundations of Data Science Workshop](https://github.com/dpcrook/SR_Foundations_DS_Fall_2015) ([sliderule](https://www.mysliderule.com/workshops/data-science/))
- - [Raspberry Pi RGB LED demo](https://github.com/dpcrook/rpi-hw-js-demo)
-   - presented at a [local Meetup](http://www.meetup.com/NoCo-JavaScript-Meetup/events/224542835/)
- - **TBD**: raspi time and temp
+Projects may include Raspberry Pi, microcontrollers or other electronics, 3D Printers, ...
 
-## 3D Printer-related projects
+## Raspberry Pi Highlights
 
-- Atlas 3D scanner [I built](/Atlas3D-scanner-ftw/)
+ - Raspberry Pi [RGB LED demo](http://idcrook.github.io/rpi-hw-js-demo/) which uses [rgb-slider](https://github.com/idcrook/rgb-slider). Everyone gets to wire up their own Pi.
+   - [First presented](/Raspberry-Pi-and-JavaScript-Jam/) at a [local Meetup](http://www.meetup.com/NoCo-JavaScript-Meetup/events/224542835/)
+   - Galvanize [Full-Stack class](/More-RasPi-Javascript/)
+   - [Fort Collins Girls Who Code](/Even-More-RasPi-Javascript/)
+ - [Raspberry Pi time and temperature display](/Moving-Indoor-Weather-Logging-To-Phant/) ([timetemp](https://github.com/idcrook/timetemp) project on GitHub)
+ - Atlas 3D scanner [that I built](/Atlas3D-scanner-ftw/)
+ - To be described: OctoPi with webcam on a Lulzbot Mini
+
+## Other Projects
+
+ - [Designs of various things, intended for 3D printing](https://github.com/idcrook/psychic-winner) (GitHub)
+   - For example: [Bicycle and Car iPhone 6 Plus Mount family](https://github.com/idcrook/psychic-winner/blob/master/iphone_6plus_mount_family/README.md)
+ - Some of these designs and others [On thingiverse](http://www.thingiverse.com/dpc/designs)
+
+## Classes
+
+ - [capstone project](https://github.com/idcrook/SR_Foundations_DS_Fall_2015/tree/master/capstone) from [Foundations of Data Science Workshop](https://github.com/idcrook/SR_Foundations_DS_Fall_2015) ([sliderule](https://www.mysliderule.com/workshops/data-science/))
+
 
 ## Other servers
 
- - [Jenkins CI](http://jenkins.crookster.org)
+ - ~~[Jenkins CI](http://jenkins.crookster.org)~~ Not currently active
 
 # Source code collections
 
- - Github: [Repositories](https://github.com/dpcrook?tab=repositories)
+ - Github: [Repositories](https://github.com/idcrook?tab=repositories)

@@ -12,13 +12,10 @@ github-pages flavor of jekyll.
 Run on OS X
 
 ```bash
-cd ~/projects/webdev/dpcrook.github.io
-eval "$(docker-machine env default)"
-#docker run -i --rm --label=jekyll --label=pages \
-# --volume=$(pwd):/srv/jekyll  \
-# -t -p 4000:4000 jekyll/jekyll:pages jekyll serve
+cd ~/projects/webdev/idcrook.github.io
 docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
-  -it -p $(docker-machine ip `docker-machine active`):4000:4000 \
+  -it -p 4000:4000 \
     jekyll/jekyll
-open http://`docker-machine ip default`:4000
+open http://0.0.0.0:4000
 ```
+

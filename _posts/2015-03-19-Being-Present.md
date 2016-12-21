@@ -19,5 +19,5 @@ technical nature, but I never really stayed disciplined with those.
 This was all before twitter or Facebook or GitHub pervasiveness.  And even Google
 appeared along the way.  Step up to today.
 
-I plan to use my [GitHub people page](https://dpcrook.github.io) to share
+I plan to use my [GitHub people page](https://idcrook.github.io) to share
 developer or technical entries and as my contact homepage.  So here it is! 
