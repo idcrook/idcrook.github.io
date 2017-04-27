@@ -4,33 +4,31 @@ title: Projects
 permalink: /projects/
 ---
 
-Projects may include Raspberry Pi, microcontrollers or other electronics, 3D Printers, ...
-
 ## Raspberry Pi Highlights
 
- - Raspberry Pi [RGB LED demo](http://idcrook.github.io/rpi-hw-js-demo/) which uses [rgb-slider](https://github.com/idcrook/rgb-slider). Everyone gets to wire up their own Pi.
-   - [First presented](/Raspberry-Pi-and-JavaScript-Jam/) at a [local Meetup](http://www.meetup.com/NoCo-JavaScript-Meetup/events/224542835/)
-   - Galvanize [Full-Stack class](/More-RasPi-Javascript/)
-   - [Fort Collins Girls Who Code](/Even-More-RasPi-Javascript/)
+ - [RGB LED demo](http://idcrook.github.io/rpi-hw-js-demo/) which uses [rgb-slider](https://github.com/idcrook/rgb-slider) simple jquery controls. In a hands-on demo, everyone gets to wire up their own Pi.
+   - [First presented](/Raspberry-Pi-and-JavaScript-Jam/) at a [local Meetup](http://www.meetup.com/NoCo-JavaScript-Meetup/events/224542835/). Also at: [a Full-Stack class](/More-RasPi-Javascript/) and [Fort Collins Girls Who Code](/Even-More-RasPi-Javascript/) meeting
+ - [IoT with MQTT and Javascript](https://github.com/idcrook/rpi-iot-demo-2017), Another hands-on demo [[Slides](http://idcrook.github.io/rpi-iot-demo-2017/presentation.html)]
  - [Raspberry Pi time and temperature display](/Moving-Indoor-Weather-Logging-To-Phant/) ([timetemp](https://github.com/idcrook/timetemp) project on GitHub)
  - Atlas 3D scanner [that I built](/Atlas3D-scanner-ftw/)
- - To be described: OctoPi with webcam on a Lulzbot Mini
+ - 3D Printer (LulzBot Mini) running [OctoPrint](http://octoprint.org) with an attached [camera](https://www.youtube.com/watch?v=2JExahTK4Vo&feature=youtu.be)
 
-## Other Projects
+## 3D Printer designs
 
- - [Designs of various things, intended for 3D printing](https://github.com/idcrook/psychic-winner) (GitHub)
-   - For example: [Bicycle and Car iPhone 6 Plus Mount family](https://github.com/idcrook/psychic-winner/blob/master/iphone_6plus_mount_family/README.md)
- - Some of these designs and others [On thingiverse](http://www.thingiverse.com/dpc/designs)
+ - 3D Designs of various items, intended for 3D printing [[GitHub](https://github.com/idcrook/psychic-winner)], for example: [Bicycle and Car iPhone 6 Plus Mount family](https://github.com/idcrook/psychic-winner/blob/master/iphone_6plus_mount_family/README.md)
+ - More [on thingiverse](http://www.thingiverse.com/dpc/designs)
 
 ## Classes
 
- - [capstone project](https://github.com/idcrook/SR_Foundations_DS_Fall_2015/tree/master/capstone) from [Foundations of Data Science Workshop](https://github.com/idcrook/SR_Foundations_DS_Fall_2015) ([sliderule](https://www.mysliderule.com/workshops/data-science/))
+ - [Foundations of Data Science Workshop](https://github.com/idcrook/SR_Foundations_DS_Fall_2015) ([Springboard](https://www.springboard.com/workshops/data-science/))    - [capstone project](https://github.com/idcrook/SR_Foundations_DS_Fall_2015/tree/master/capstone)
 
 
 ## Other servers
 
- - ~~[Jenkins CI](http://jenkins.crookster.org)~~ Not currently active
+ - ~~[Jenkins CI](http://jenkins.crookster.org)~~: _Not currently active_
+ - [Simple Homepage](https://www.crookster.org)
+ -  [IoT data server](https://data.crookster.org), uses [phant](https://github.com/idcrook/phant)
 
 # Source code collections
 
- - Github: [Repositories](https://github.com/idcrook?tab=repositories)
+ - [GitHub repositories](https://github.com/idcrook?tab=repositories)
