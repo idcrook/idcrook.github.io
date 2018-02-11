@@ -9,7 +9,7 @@ Previously, I had setup [HomeKit connecting to Nest thermostat and Belkin WeMo d
 
 There is a homebridge plugin that transcodes a provided video stream into the formats needed for HomeKit.  It uses `ffmpeg` project to achieve this, and the latest package for *ffmpeg* on Raspbian includes the OMX extension needed for using hardware encoding features for H264 video.
 
-https://github.com/KhaosT/homebridge-camera-ffmpeg
+[homebridge-camera-ffmpeg on GitHub](https://github.com/KhaosT/homebridge-camera-ffmpeg "homebridge-camera-ffmpeg")
 
 ### Installing homebridge-camera-ffmpeg
 
