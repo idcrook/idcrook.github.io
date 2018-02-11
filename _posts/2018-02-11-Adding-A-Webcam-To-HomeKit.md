@@ -3,8 +3,6 @@ layout: post
 title: Adding a Webcam to Homekit Using a Raspberry Pi 3
 ---
 
-# Adding a webcam to Homekit using a Raspberry Pi 3
-
 Previously, I had setup [HomeKit connecting to Nest thermostat and Belkin WeMo devices](/Extending-HomeKit-with-Homebridge-and-Raspberry-Pi/ "Extending HomeKit with Homebridge and Raspberry Pi to All the Things") using Homebridge project.  I had on my TODO list for a long time to put a webcam on HomeKit.  At the end of some twists and turns it ended up being relatively easy, had I known the following from the start.
 
 ## Using homebridge-camera-ffmpeg plugin
