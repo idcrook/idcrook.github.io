@@ -59,7 +59,7 @@ These may differ from instructions on the wiki as a result, but I have tested an
 sudo apt-get install -y libavahi-compat-libdnssd-dev
 
 sudo npm install -g --unsafe-perm homebridge hap-nodejs node-gyp
-NODE_BIN_DIR=$(dirname nvm which default)
+NODE_BIN_DIR=$(dirname `nvm which default`)
 NODE_MODULES_DIRS=$(dirname $NODE_BIN_DIR/../lib/node_modules/.)
 cd $NODE_MODULES_DIRS/homebridge/
 sudo npm install --unsafe-perm bignum
