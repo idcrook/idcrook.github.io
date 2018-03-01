@@ -6,7 +6,7 @@
 name: David Crook
 
 # Short bio or description (displayed in the header)
-description: Polymath in NoCo
+description: NoCo Hacker
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/461806?v=3&s=140
@@ -33,7 +33,8 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+# https://github.com/barryclark/jekyll-now/wiki/How-to-add-Disqus-to-your-blog
+disqus: https-idcrook-github-io-idcrook-github-io
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-60990004-1
@@ -74,7 +75,8 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+# https://help.github.com/articles/configuring-jekyll-plugins/
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
@@ -84,5 +86,6 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+    - README.upstream.md
     - CNAME
     - UsingDockerToServe.md

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: false
 title: Adding a Webcam to Homekit Using a Raspberry Pi 3
 ---
 

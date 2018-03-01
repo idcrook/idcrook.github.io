@@ -15,7 +15,6 @@ Run on OS X
 cd ~/projects/webdev/idcrook.github.io
 docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
   -it -p 4000:4000 \
-    jekyll/jekyll
+    jekyll/jekyll jekyll s
 open http://0.0.0.0:4000
 ```
-
