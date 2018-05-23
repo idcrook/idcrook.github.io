@@ -55,14 +55,16 @@ permalink: /:title/
 #   input: GFM
 
 # https://jekyllrb.com/docs/pagination/
-paginate: 3
+paginate: 10
 paginate_path: "/page-:num/"
   
-# # Set the Sass partials directory, as we're using @imports
-# sass:
-#   style: :expanded # You might prefer to minify using :compressed
+# Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: _sass
+  style: compressed # You might prefer to inspect with "expand"
 
-theme: jekyll-theme-tactile
+# custom CSS overrides theme
+# theme: jekyll-theme-tactile
   
 # Use the following plug-ins
 # https://help.github.com/articles/configuring-jekyll-plugins/
