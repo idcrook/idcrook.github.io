@@ -55,7 +55,7 @@ permalink: /:title/
 #   input: GFM
 
 # https://jekyllrb.com/docs/pagination/
-paginate: 5
+paginate: 3
 paginate_path: "/page-:num/"
   
 #   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
