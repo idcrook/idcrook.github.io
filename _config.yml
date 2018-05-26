@@ -9,6 +9,16 @@ title: David Crook
 # Short bio or description (displayed in the header)
 description: NoCo Hacker
 
+github:
+  private: false
+  license:
+    name: MIT
+  source:
+    branch: "master"
+    path: "/"
+  repository_url: "https://github.com/idcrook/idcrook.github.io"
+
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/461806?v=3&s=140
 
@@ -52,17 +62,16 @@ baseurl: ""
 
 permalink: /:title/
 
-# kramdown:
-#   input: GFM
-
 # https://jekyllrb.com/docs/pagination/
 paginate: 5
 paginate_path: "/page-:num/"
 
 # # Set the Sass partials directory, as we're using @imports
-# sass:
-#   sass_dir: _sass
-#   style: compressed # You might prefer to inspect with "expand"
+sass:
+  sass_dir: _sass
+  style: :compressed
+#  style: :expand # You might prefer ":compressed
+#  style: :compressed # You might prefer ":expand"
 
 theme: jekyll-theme-primer
 
@@ -71,7 +80,6 @@ theme: jekyll-theme-primer
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  - jekyll-paginate
   - jemoji # allow :smile:
 
 # Exclude these files from your production _site
