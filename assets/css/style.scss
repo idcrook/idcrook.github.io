@@ -1,11 +1,12 @@
 ---
 ---
 
+@import "reset";
+
 @import "{{ site.theme }}";
-// Add any custom CSS (or Sass, including imports)
+// Add any custom CSS (or Sass, including imports) HERE
 
 /* pulled over from jekyll-now/old site layout */
-
 @import "variables";
 
 body {
@@ -37,9 +38,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
-  // a {
-  //   color: inherit;
-  // }
+  a {
+    color: inherit;
+  }
 }
 
 h2 {
@@ -66,6 +67,35 @@ a {
   &:hover, &:active {
     color: $blue;
   }
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
 }
 
 img {
@@ -202,3 +232,54 @@ nav {
 	}
     }
 }
+
+//
+// .main
+//
+
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: $lightGray;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+// Commenting out to use builtin rouge highlight settings from jekyll theme
+//@import "highlights";
+@import "svg-icons";

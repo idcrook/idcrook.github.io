@@ -30,11 +30,12 @@ avatar: https://avatars0.githubusercontent.com/u/461806?v=3&s=140
 footer-links:
   dribbble:
   email: david.crook@gmail.com
-  facebook: idcrook
+  facebook: # idcrook
   flickr:
   github: idcrook
-  instagram: dpc
-  linkedin: davidcrook
+  homepage: https://www.crookster.org
+  instagram: # dpc
+  linkedin: # davidcrook
   pinterest:
   rss: yes
   twitter: idcrook
