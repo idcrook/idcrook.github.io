@@ -13,7 +13,7 @@ I still use "DHCP reservations" to assign IP addresses to computers on personal 
 
 Anyway, the configuration and maintenance of close to a dozen "identical" machines used to be performed using utility named [csshx](https://github.com/brockgr/csshx). It allows streaming inputs (over SSH sessions) identically to multiple target machines. Basically, a set of commands and steps that you could perform on one machine gets run on tens of machines.  On macOS, using [Homebrew](https://brew.sh/), you can install with:
 
-``` shell
+```shell
 brew install csshx
 ```
 

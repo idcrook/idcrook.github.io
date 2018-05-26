@@ -15,7 +15,7 @@ Adapted from:
 
 ## Install docker and kubernetes executables
 
-```
+```shell
 sudo apt install docker.io
 sudo systemctl enable docker
 
@@ -44,7 +44,7 @@ sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address
 
 ## setup cluster with flannel
 
-```
+```shell
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
@@ -55,7 +55,7 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 
 ## allow single node (master) cluster
 
-```
+```shell
 kubectl taint nodes --all node-role.kubernetes.io/master-
 # check that it is working
 kubectl get all --namespace=kube-system
@@ -64,7 +64,7 @@ kubectl get all --namespace=kube-system -o wide
 
 ## Run a container
 
-```
+```shell
 kubectl run guids --image=alexellis2/guid-service:latest --port 9000
 kubectl get pods
 kubectl describe pod guids-7cdb55649f-8mfsn
@@ -73,7 +73,7 @@ curl http://10.244.0.3:9000/guid ; echo
 ```
 
 Inspecting container
-```
+```shell
 kubectl logs guids-7cdb55649f-8mfsn
 kubectl exec -t -i guids-7cdb55649f-8mfsn sh
 / # head -n3 /etc/os-release
@@ -86,7 +86,7 @@ kubectl exec -t -i guids-7cdb55649f-8mfsn sh
 
 ### Install dashboard
 
-```
+```shell
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
 
 # run proxy
@@ -99,7 +99,7 @@ kubectl proxy
 
 Put the snippets below into files.
 
-#### create Service Account
+#### Create Service Account
 
 create Service Account with name `admin-user` in namespace `kube-system` first
 
@@ -138,7 +138,7 @@ subjects:
 
 #### obtain the token
 
-```
+```shell
 # from another new terminal in  macOS
 ssh kubernetes-master
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | awk '{print $1}')
@@ -149,7 +149,7 @@ Helpful [https://github.com/kubernetes/dashboard/wiki/Access-control](https://gi
 
 ### Tunnel to host to view UI in browser
 
-```
+```shell
 # from new terminal in macOS, ssh tunnel to proxy
 ssh -L 8001:127.0.0.1:8001 -N kubernetes-master
 

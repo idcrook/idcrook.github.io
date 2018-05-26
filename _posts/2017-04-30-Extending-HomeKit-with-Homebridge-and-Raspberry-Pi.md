@@ -55,7 +55,7 @@ There are many instructions on how to image Raspbian onto an micro-SD card and c
 
 These may differ from instructions on the wiki as a result, but I have tested and used these actual commands.
 
-```
+```shell
 sudo apt-get install -y libavahi-compat-libdnssd-dev
 
 sudo npm install -g --unsafe-perm homebridge hap-nodejs node-gyp
@@ -75,7 +75,7 @@ Now use "normal" [installation](https://github.com/nfarina/homebridge/blob/maste
 
 There are instructions available on how to auomatically launch the homebridge server when your Pi starts up (e.g. [systemd](https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi#running-homebridge-on-bootup-systemd)), but I use something different. I use `GNU screen` to be able to reconnect to long-running commands (such as node.js servers like `homebridge` is).
 
-``` shell
+```shell
 screen -R
 which homebridge
 /home/pi/.nvm/versions/node/v7.4.0/bin/homebridge
@@ -95,7 +95,7 @@ There are, at this writing "586 packages found for "homebridge-plugin". Not all 
 
 The  `~/.homebridge/config.json` needs to be edited for your devices. Here's a snippet with most custom values obscured.
 
-``` json
+```json
   "description": "Used as template for creating your own configuration file.",
 
   "accessories": [
@@ -126,14 +126,14 @@ The plugin I used is `homebridge-platform-wemo`
 
 - [https://github.com/rudders/homebridge-platform-wemo](https://github.com/rudders/homebridge-platform-wemo)
 
-```
+```shell
 sudo npm install -g homebridge-platform-wemo
 ```
 
 
 ### auto-detect config.json (platform)
 
-```
+```json
  "platforms": [
     {
       "platform": "BelkinWeMo",
