@@ -22,20 +22,20 @@ What to do with a Nest thermostat, Belkin WeMo smart switches and lights, web se
 
 <!-- markdown-toc end -->
 
-# HomeKit's shortfalls
+## HomeKit's shortfalls
 
 Apple's HomeKit has many promises on a smart, seamless home environment.  And indeed, if you have a collection of devices that directly support HomeKit, it is like living in a future paradise. Doors that unlock when you approach them, speaking into your watch to turn down the lights or crank up the A/C, or check in on your pet when you are fine dining.
 
 Where it fell down though, is the multitude of devices and products that do not have HomeKit support built-in. Indeed, after years of Belkin WeMo ([WeMo Says No HomeKit](http://www.belkin.com/us/support-article?articleNum=187953)), Nest, other one-off "smart home" monitors and controls, the first things I had in my home that actually integrated natively with Apple HomeKit was Philips Hue. And even there as is typical, they direct you to use their one-off apps to register and control their branded devices.
 
-# Enter homebridge. Easy as Pi
+## Enter homebridge. Easy as Pi
 
  - [homebridge](https://github.com/nfarina/homebridge): "HomeKit support for the impatient"
 
 A node.js-based bridge for HomeKit devices, homebridge can serve to connect assorted types of devices and services into the HomeKit environment.
 
 
-## Install on Raspberry Pi 3
+### Install on Raspberry Pi 3
 
 For this to work, it is assumed:
 
@@ -49,7 +49,7 @@ There are many instructions on how to image Raspbian onto an micro-SD card and c
 
 [https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi](https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi)
 
-### Actual steps that I used
+#### Actual steps that I used
 
 `nvm` is a handy utility, and the following assumes you are using latest stable node.js installed using `nvm`.
 
@@ -84,14 +84,14 @@ $homebridge
 # ... homebridge start-up output here
 ```
 
-# Homebridge plugins
+## Homebridge plugins
 
 
 The power and flexibilty of the `homebridge` bridge comes from the [plethora](https://www.npmjs.com/search?q=plugin+for+homebridge) of [plugins](https://www.npmjs.com/search?q=homebridge-plugin) available.
 There are, at this writing "586 packages found for "homebridge-plugin". Not all are of the same quality or as widely applicable as each other, and many have been made redundant, but there is likely a plugin existing for something you wish that HomeKit supported.  And if not, you can use Javascript and node.js and the example plugins to make your own... :)
 
 
-## From my `~/.homebridge/config`
+### From my `~/.homebridge/config`
 
 The  `~/.homebridge/config.json` needs to be edited for your devices. Here's a snippet with most custom values obscured.
 
@@ -118,7 +118,7 @@ The  `~/.homebridge/config.json` needs to be edited for your devices. Here's a s
 
 
 
-## Belkin WeMo plugin
+### Belkin WeMo plugin
 
 Belkin sez no waze. Internet can haz WeMomeKit.
 
@@ -131,7 +131,7 @@ sudo npm install -g homebridge-platform-wemo
 ```
 
 
-### auto-detect config.json (platform)
+#### auto-detect config.json (platform)
 
 ```json
  "platforms": [
@@ -147,7 +147,7 @@ works perfectly!
 
 
 
-## Nest plugin
+### Nest plugin
 
 [https://github.com/KraigM/homebridge-nest](https://github.com/KraigM/homebridge-nest)
 
