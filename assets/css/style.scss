@@ -102,7 +102,33 @@ img {
   max-width: 100%;
 }
 
+// https://kramdown.gettalong.org/syntax.html#attribute-list-definitions
+// ![](){: .center-image }
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
 
+// https://stackoverflow.com/a/39614958
+// ![image alt >](/image-right.jpg)
+// ![image alt <](/image-left.jpg)
+// ![image alt <>](/center-image.jpg)
+img[alt$=">"] {
+  float:right;
+}
+
+img[alt$="<"] {
+  float:left;
+}
+
+img[alt$="<>"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    float: none!important;
+}
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {

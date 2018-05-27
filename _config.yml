@@ -43,6 +43,26 @@ footer-links:
   youtube: channel/UCvxiCpuYsfttAuh8A5iCCxg
   googleplus: # anything in your profile username that comes after plus.google.com/
 
+
+# used by jekyll-seo-tag plugin
+author:
+  twitter: idcrook
+
+twitter:
+  username: idcrook
+  card: summary
+
+social:
+  name: David Crook
+  links:
+    - https://twitter.com/idcrook
+    - https://github.com/idcrook
+    - https://www.instagram.com/dpc
+    - https://www.linkedin.com/in/davidcrook
+    - https://keybase.io/idcrook
+    - https://youtube.com/channel/UCvxiCpuYsfttAuh8A5iCCxg
+    - https://www.facebook.com/idcrook
+
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 # https://github.com/barryclark/jekyll-now/wiki/How-to-add-Disqus-to-your-blog

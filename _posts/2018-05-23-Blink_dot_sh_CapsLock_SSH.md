@@ -12,12 +12,12 @@ I've been searching for a way to use CapsLock as another Control key on iOS for 
 
 blink app is strange since it presents you with a prompt similar to what you’d encounter in a terminal shell: `blink>`.  To bring up app settings, the command is `config`.
 
-![Bring up config](/images/blink-config-at-prompt.jpeg)
+![Bring up config](/images/blink-config-at-prompt.jpeg){: .center-image }
 
 The keyboard-related settings are easy enough to find.
 
-![Settings dialog](/images/blink-dialog-Settings.jpeg)
-![Keyboard settings](/images/blink-dialog-Keyboard.jpeg)
+![Settings dialog <>](/images/blink-dialog-Settings.jpeg){: width="640px" }
+![Keyboard settings <>](/images/blink-dialog-Keyboard.jpeg){: width="640px" }
 
 Since the app uses a software method to emulate the key-remapping behavior, the CapsLock indicator on actual keyboard still will toggle its light with each press.  Also note that this behavior only works within the app, and doesn’t work across iOS apps or system :frowning: ...
 
