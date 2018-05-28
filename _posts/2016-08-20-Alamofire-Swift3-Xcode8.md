@@ -9,7 +9,7 @@ Had to figure out how to use the Swift 3 branch. Didn't find the instructions el
 
 Assumes Xcode 8.0 β6, iOS 10 target (with Swift 3), Mac Homebrew with git
 
- 1. Download Alamofire framework using git to get `swift3` branch 
+ 1. Download Alamofire framework using git to get `swift3` branch
 
         cd Project  # Xcode project created with git source control
         git submodule add https://github.com/Alamofire/Alamofire.git
@@ -57,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 Example output
 
-```
+```config
 Optional(https://httpbin.org/get)
 Optional(<NSHTTPURLResponse: 0x60800002ea40> { URL: https://httpbin.org/get } { status code: 200, headers {
     "Access-Control-Allow-Origin" = "*";
@@ -81,4 +81,3 @@ Optional({
     url = "https://httpbin.org/get";
 })
 ```
-

@@ -32,7 +32,7 @@ It wasn't yet appearing in the helpful dropdowns in the Plist editor in Xcode 8.
 
 I've included a transcript of commands you can run on macOS to explore some of the information in Bonjour netowrking. My example shows the name for an OctoPi instance and how to get its name and IPv4 address.
 
-```
+```shell
 $ dns-sd -B _http._tcp. local.
 
 Browsing for _http._tcp..local.
@@ -53,7 +53,5 @@ $ dns-sd -q octopi.local. A
 DATE: ---Mon 29 Aug 2016---
 12:35:46.171  ...STARTING...
 Timestamp     A/R Flags if Name                          Type  Class   Rdata
-12:35:46.172  Add     2  7 octopi.local.                 Addr   IN     10.0.1.46 
+12:35:46.172  Add     2  7 octopi.local.                 Addr   IN     10.0.1.46
 ```
-
-

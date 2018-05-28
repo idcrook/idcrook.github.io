@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: false
 title: Adding a Webcam to Homekit Using a Raspberry Pi 3
 ---
 
@@ -15,7 +16,7 @@ There is a homebridge plugin that transcodes a provided video stream into the fo
 
 Installing on my Raspberry Pi 3 was as simple as any other homebridge plugin:
 
-```
+```shell
 sudo apt update
 sudo apt install ffmpeg
 sudo npm install -g homebridge-camera-ffmpeg
@@ -31,7 +32,7 @@ In my case, I am attaching a USB webcam I had available. It is in one of the USB
 
 This needs the user that runs homebridge to have permission to access the `/dev/video0` device where the kernel interface to camera gets made available. In my setup, the user is `homebridge` and the video group is `video`.  In my case I also wanted to use command line from default `pi` user to try different `ffmpeg` CLI settings, so I added that user too.
 
-```
+```shell
 sudo usermod -aG video pi
 sudo usermod -aG video homebridge
 ```
@@ -40,7 +41,7 @@ You'll probably need to log out and/or reboot for these changes to get propagate
 
 You can use *ffmpeg* to test your webcam and codec together. For example, I ran this command on Raspberry Pi (as user `pi`):
 
-```
+```shell
 ffmpeg -f v4l2 -framerate 30 -video_size 1280x720 -i /dev/video0 -pix_fmt yuv420p  -c:v h264_omx  output.mkv
 ```
 
@@ -52,8 +53,7 @@ Finally for homebridge to use the plugin, you need to configure settings in your
 
 I am not sure the snapshot/still image feature is working yet, but adding this to my `platforms` in Homebridge *config.json* was sufficient for video streaming.
 
-```
-{
+```json
    {
       "platform": "Camera-ffmpeg",
       "cameras": [
@@ -69,12 +69,12 @@ I am not sure the snapshot/still image feature is working yet, but adding this t
           }
         }
       ]
-    }
+   } // ...
 ```
 
 I test changes to my `config.json` for `homebridge` running under `systemd` using something similar to:
 
-```
+```shell
 sudo systemctl restart homebridge
 sudo journalctl -f -u homebridge
 ```
@@ -83,7 +83,7 @@ The `journalctl` command looks at a live logfile for running `homebridge`
 
 ### Checking the Homebridge logfile
 
-```
+```shell
 sudo journalctl -f -u homebridge
 [...]
 Feb 11 11:55:22 rpih1 homebridge[423]: Snapshot -f v4l2 -r 30 -s 1280x720 -i /dev/video0 -t 1 -s 480x270 -f image2 -
