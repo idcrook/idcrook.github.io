@@ -5,11 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
     <meta name="author" content="{{ site.social.name }}" />
-    
     <!-- added for jekyll-feed plugin -->
     {% feed_meta %}
-
-    {% if page.title %}
-    <meta property="twitter:title" content="{{ page.title }}" />
-    {% endif %}
-    <!-- Begin meta.html -->
+    {% if page.title %}<meta property="twitter:title" content="{{ page.title }}" />{% endif %}
+    <!-- End meta.html -->

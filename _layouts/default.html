@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    {% include meta.html %}
-    {% seo %}
-
+{% include meta.html %}
+{% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -29,9 +28,7 @@
     </div>
 
     <div id="main" role="main" class="container-lg px-3 my-5 markdown-body">
-
       {{ content }}
-
     </div>
 
     <div class="wrapper-footer">

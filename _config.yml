@@ -9,6 +9,7 @@ title: David Crook
 # Short bio or description (displayed in the header)
 description: NoCo Hacker Dev Blog
 
+# these are more useful for a shared code repo
 github:
   private: false
   license:
@@ -18,13 +19,8 @@ github:
     path: "/"
   repository_url: "https://github.com/idcrook/idcrook.github.io"
 
-
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/461806?v=3&s=140
-
-#
-# Flags below are optional
-#
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -43,12 +39,12 @@ footer-links:
   youtube: channel/UCvxiCpuYsfttAuh8A5iCCxg
   googleplus: # anything in your profile username that comes after plus.google.com/
 
-
 # used by jekyll-seo-tag plugin
 twitter:
   username: idcrook
   card: summary
-  
+
+# search site console  
 google_site_verification: PWPQbEIJ5PwPMsdjZzGgB0JAAalS8_ISAhBU12sMbh0
 
 social:
@@ -75,7 +71,6 @@ google_analytics: UA-60990004-1
 ##url: https://idcrook.github.io
 # change to match the CNAME so that the sitemap is "accepted"
 url: https://github.crookster.org
-
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
