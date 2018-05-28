@@ -4,22 +4,13 @@ title: About
 permalink: /about/
 ---
 
-My name is David Crook and I live in often-sunny Northern Colorado.
-I enjoy sharing photos on <a href="https://www.instagram.com/dpc/" target="\_blank">Instagram</a>.
-I also enjoy developing software in various environments in multiple languages for an
-assortment of reasons. Occasionally I post on the [blog](/) on this site and have
-started listing some of my [projects](/projects/) too.
+David Crook likes often-sunny Colorado. He enjoys developing software, occasionally [blogging](/) and listing related [projects](/projects/) on this site.
 
-## More Info, or To Contact Me
+<a href="https://www.instagram.com/dpc/" target="_blank">Instagram</a> and <a href="https://twitter.com/idcrook" target="_blank">Twitter</a> are his preferred social media, with additional methods listed at bottom of page.
 
-Twitter: [@idcrook](https://twitter.com/idcrook)
+-----
 
-Email: [david.crook@gmail.com](mailto:david.crook@gmail.com)
+![Sun's up! <>](/images/suns_up_2012-JAN-30.jpg "Backyard view of Sunrise, 2012-Jan-30")
 
-There are icons at the bottom of each page with more.
-
-![Sun's up! pic I took](/images/suns_up_2012-JAN-30.jpg)
-
-[\[source\]](https://instagram.com/p/mOSfY/) from my IG feed.
-
-Sometimes [http://www.crookster.org](http://www.crookster.org) is up.  
+\[<a href="https://instagram.com/p/mOSfY/" target="_blank">source</a>\]
+{: style="color:gray; font-size: 80%; text-align: center;"}

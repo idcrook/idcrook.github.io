@@ -30,7 +30,7 @@ footer-links:
   flickr:
   github: idcrook
   homepage: https://www.crookster.org
-  instagram: # dpc
+  instagram: dpc
   linkedin: # davidcrook
   pinterest:
   rss: yes
@@ -44,7 +44,7 @@ twitter:
   username: idcrook
   card: summary
 
-# search site console  
+# search site console
 google_site_verification: PWPQbEIJ5PwPMsdjZzGgB0JAAalS8_ISAhBU12sMbh0
 
 social:
