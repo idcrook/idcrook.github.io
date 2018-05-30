@@ -38,5 +38,5 @@ When you run these functions, the results are returned directly into X input.
 
 I "saved" these functions on PCalc (Mac) and share them here. I think it should be possible to load them within the app rather than recreating the formulas.
 
- - [Decimal Degrees to Degrees Minutes Seconds (D > DMS)](/images/Decimal Degrees to Degrees Minutes Seconds (D > DMS).pcalcfunctions)
- - [Degrees Minutes Seconds to Decimal Degrees (DMS > D)](/images/Degrees Minutes Seconds to Decimal Degrees (DMS > D).pcalcfunctions)
+ - [Decimal Degrees to Degrees Minutes Seconds (D > DMS)](/assets/files/Decimal Degrees to Degrees Minutes Seconds (D > DMS).pcalcfunctions)
+ - [Degrees Minutes Seconds to Decimal Degrees (DMS > D)](/assets/files/Degrees Minutes Seconds to Decimal Degrees (DMS > D).pcalcfunctions)
