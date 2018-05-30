@@ -2,6 +2,15 @@
 layout: page
 title: About
 permalink: /about/
+seo:
+  name: About David Crook
+  type: AboutPage
+  links:
+  - https://twitter.com/idcrook
+  - https://github.com/idcrook
+  - https://www.instagram.com/dpc
+  - https://www.linkedin.com/in/davidcrook
+  - https://keybase.io/idcrook
 ---
 
 David Crook likes often-sunny Colorado. He enjoys developing software, occasionally [blogging](/) and listing related [projects](/projects/) on this site.

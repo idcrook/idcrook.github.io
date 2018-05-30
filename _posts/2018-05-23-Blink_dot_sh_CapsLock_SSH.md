@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title: Hardware CapsLock as Control key in iOS SSH client using blink.sh
+image: /images/blink-dialog-Keyboard.jpeg
 ---
 
 I've been searching for a way to use CapsLock as another Control key on iOS for as long as there has been hardware keyboard support in iOS. (Emacs habits never die!)[^1] I have legacy USB and bluetooth keyboards that I’d like this to work with.
