@@ -6,16 +6,12 @@ permalink: /projects/
 
 ## Raspberry Pi
 
-<div id="raspi-timetemp" class="container-lg px-3 my-5 markdown-body">
-
 - **Raspberry Pi Time and Temperature Display**
-![timetemp photo >](/images/updated-timetemp-June-2018.jpeg)
+![timetemp photo >](/images/updated-timetemp-June-2018.jpeg){: width="160px" }
   - Logs using "IoT Data Logging" service referenced below
   - [Live Charts](https://github.crookster.org/timetemp/){: target="_blank"}
   - Recent [blog post](/Moving-Indoor-Weather-Logging-To-Phant/)
   - Project [on Github](https://github.com/idcrook/timetemp){: target="_blank"}
-
-</div>
 
 ## 3D Printering
 
