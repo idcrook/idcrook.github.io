@@ -7,6 +7,7 @@ permalink: /projects/
 ## Raspberry Pi
 
 - **Raspberry Pi Time and Temperature Display**
+![timetemp photo >](/images/updated-timetemp-June-2018.jpeg)
   - Logs using "IoT Data Logging" service referenced below
   - [Live Charts](https://github.crookster.org/timetemp/){: target="_blank"}
   - Recent [blog post](/Moving-Indoor-Weather-Logging-To-Phant/)
