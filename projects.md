@@ -6,6 +6,7 @@ permalink: /projects/
 
 ## Raspberry Pi
 
+<div id="raspi-timetemp" class="container-lg px-3 my-5 markdown-body">å
 - **Raspberry Pi Time and Temperature Display**
 ![timetemp photo >](/images/updated-timetemp-June-2018.jpeg)
   - Logs using "IoT Data Logging" service referenced below
