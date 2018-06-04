@@ -4,6 +4,8 @@ title: Projects
 permalink: /projects/
 ---
 
+#### Source code - [GitHub repos (@idcrook)](https://github.com/idcrook?tab=repositories){: target="_blank"}
+
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 - [Raspberry Pi](#raspberry-pi)
 - [Servers / Services](#servers--services)
@@ -11,9 +13,6 @@ permalink: /projects/
 	- [**Atlas 3D scanner**](#atlas-3d-scanner)
 	- [3D Print designs in a GitHub repo](#3d-print-designs-in-a-github-repo)
 	- [3D Printers](#3d-printers)
-		- [LulzBot Mini running OctoPrint](#lulzbot-mini-running-octoprint)
-		- [Monoprice Delta Mini](#monoprice-delta-mini)
-		- [Makerbot Replicator 2X](#makerbot-replicator-2x)
 - [Archives](#archives)
     - [Demos / Presentations](#demos--presentations)
         - [Raspberry Pi Demos](#raspberry-pi-demos)
@@ -21,8 +20,6 @@ permalink: /projects/
 
 <!-- markdown-toc end -->
 
-
-#### Source code - [GitHub repos (@idcrook)](https://github.com/idcrook?tab=repositories){: target="_blank"}
 
 ## Raspberry Pi
 
