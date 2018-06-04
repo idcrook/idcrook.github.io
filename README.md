@@ -1,7 +1,7 @@
 
 # GitHub Pages for account @idcrook
 
-Lives at <https://idcrook.github.io/>  -> <https://github.crookster.org/>
+Lives at [https://idcrook.github.io/](https://idcrook.github.io/)  -\> [https://github.crookster.org/](https://github.crookster.org/)
 
 ## Resources
 
