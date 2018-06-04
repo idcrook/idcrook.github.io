@@ -4,54 +4,78 @@ title: Projects
 permalink: /projects/
 ---
 
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+- [Raspberry Pi](#raspberry-pi)
+- [Servers / Services](#servers--services)
+- [3D Printering](#3d-printering)
+	- [**Atlas 3D scanner**](#atlas-3d-scanner)
+	- [3D Print designs in a GitHub repo](#3d-print-designs-in-a-github-repo)
+	- [3D Printers](#3d-printers)
+		- [LulzBot Mini running OctoPrint](#lulzbot-mini-running-octoprint)
+		- [Monoprice Delta Mini](#monoprice-delta-mini)
+		- [Makerbot Replicator 2X](#makerbot-replicator-2x)
+- [Archives](#archives)
+    - [Demos / Presentations](#demos--presentations)
+        - [Raspberry Pi Demos](#raspberry-pi-demos)
+    - [Courses](#courses)
+
+<!-- markdown-toc end -->
+
+
+#### Source code - [GitHub repos (@idcrook)](https://github.com/idcrook?tab=repositories){: target="_blank"}
+
 ## Raspberry Pi
 
 - **Raspberry Pi Time and Temperature Display**
 ![timetemp photo >](/images/updated-timetemp-June-2018.jpeg){: width="120px" }
-  - Logs using "IoT Data Logging" service referenced below
+  - Logs measurements using "IoT Data Logging" service
   - [Live Charts](https://github.crookster.org/timetemp/){: target="_blank"}
-  - Recent [blog post](/Moving-Indoor-Weather-Logging-To-Phant/)
-  - Project [on Github](https://github.com/idcrook/timetemp){: target="_blank"}
-
-## 3D Printering
-
-- **Atlas 3D scanner** - I built one!
-  - [blog post](/Atlas3D-scanner-ftw/)
-  - [Kickstarter project](https://www.kickstarter.com/projects/1545315380/atlas-3d-the-3d-scanner-you-print-and-build-yourse){: target="_blank"} behind it
-- 3D Print designs in a [GitHub repo](https://github.com/idcrook/psychic-winner){: target="_blank"}
-  - for example: [Bicycle and Car iPhone 6 Plus Mount family](https://github.com/idcrook/psychic-winner/blob/master/iphone_6plus_mount_family/README.md)
-  - more designs on [thingiverse account](http://www.thingiverse.com/dpc/designs){: target="_blank"}
-
-- 3D Printers
-  - **LulzBot Mini** running [OctoPrint](http://octoprint.org)
-    - Have made timelapses with an attached [camera](https://www.youtube.com/watch?v=2JExahTK4Vo&feature=youtu.be)
+  - Recent [blog post](/Moving-Indoor-Weather-Logging-To-Phant/), code [on Github](https://github.com/idcrook/timetemp){: target="_blank"}
 
 ## Servers / Services
 
+I use a [homespun **_Kubernetes_**](https://github.com/idcrook/kubernetes-homespun){: target="_blank"} cluster for some services from my home network.
 
-I use a [homespun **_Kubernetes_**](https://github.com/idcrook/kubernetes-homespun){: target="_blank"} cluster to run these services on home network.
+| Role | Service | Address |
+| --- | --- | --- |
+| Static webserver | [lighttpd](http://www.lighttpd.net){: target="_blank" } | [https://www.crookster.org](https://www.crookster.org/){: target="_blank" } |
+| IoT Data Logging | [phant](http://github.com/idcrook/phant){: target="_blank" } | [https://data.crookster.org](https://data.crookster.org/){: target="_blank" } |
 
-| Service | Description |
-| --- | --- |
-| Static webserver | serves homepage at [https://www.crookster.org](https://www.crookster.org/) |
-| IoT Data Logging | [https://data.crookster.org](https://data.crookster.org/){: target="_blank"} uses [phant]("https://github.com/idcrook/phant){: target="_blank"} |
+## 3D Printering
+
+### **Atlas 3D scanner**
+
+  - I built one! - [blog post](/Atlas3D-scanner-ftw/)
+  - [Kickstarter project](https://www.kickstarter.com/projects/1545315380/atlas-3d-the-3d-scanner-you-print-and-build-yourse){: target="_blank"} behind it
+
+### 3D Print designs in a [GitHub repo](https://github.com/idcrook/psychic-winner){: target="_blank"}
+  - for example: [Bicycle and Car iPhone 6 Plus Mount family](https://github.com/idcrook/psychic-winner/blob/master/iphone_6plus_mount_family/README.md){: target="_blank" }
+  - more designs on [thingiverse account](http://www.thingiverse.com/dpc/designs){: target="_blank"}
+
+### 3D Printers
+
+#### LulzBot Mini running [OctoPrint](http://octoprint.org)
+
+   - Timelapse with an attached [camera](https://www.youtube.com/watch?v=2JExahTK4Vo&feature=youtu.be)
+
+#### Monoprice Delta Mini
+
+#### Makerbot Replicator 2X
 
 
-# Project Archives
+# Archives
 
-### Demos / Presentations
+## Demos / Presentations
 
-- Raspberry Pi [RGB LED demo](http://idcrook.github.io/rpi-hw-js-demo/) with [rgb-slider](https://github.com/idcrook/rgb-slider) simple jquery controls.
+### Raspberry Pi Demos
+
+- [RGB LED demo](http://idcrook.github.io/rpi-hw-js-demo/) with [rgb-slider](https://github.com/idcrook/rgb-slider) simple jquery controls.
     - In a hands-on demo, everyone got to wire up and control a real-live Raspberry Pi.
 	- [First presented](/Raspberry-Pi-and-JavaScript-Jam/) at a [local Meetup](http://www.meetup.com/NoCo-JavaScript-Meetup/events/224542835/).
     -  Also at: [a Full-Stack class](/More-RasPi-Javascript/) and [Fort Collins Girls Who Code](/Even-More-RasPi-Javascript/) meeting
 	- Full [code repo](https://github.com/idcrook/rpi-hw-js-demo), including demo [pt. 1](https://github.com/idcrook/rpi-hw-js-demo/blob/gh-pages/demo_notes/demo1.md) / [pt. 2](https://github.com/idcrook/rpi-hw-js-demo/blob/gh-pages/demo_notes/demo2.md)
 
 - [IoT with MQTT and Javascript](https://github.com/idcrook/rpi-iot-demo-2017), Another hands-on Raspberry Pi demo [[Slides](http://idcrook.github.io/rpi-iot-demo-2017/presentation.html)]
-
-More source code
-
- - [GitHub repos (@idcrook)](https://github.com/idcrook?tab=repositories){: target="_blank"}
 
 
 ## Courses
