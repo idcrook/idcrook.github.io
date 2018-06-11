@@ -2,7 +2,7 @@
 layout: post
 comments: false
 title: Compiling and Installing Python 3.7 b5 on Raspberry Pi
-date: 2018-06-10
+date: 2018-06-11
 ---
 
 Python3.7 is [scheduled](https://www.python.org/dev/peps/pep-0537/#schedule) to be released at the end of June 2018. I wanted to explore some of the [new things](https://docs.python.org/3.7/whatsnew/3.7.html) and put it on a Raspberry PI. Here are the instructions.
