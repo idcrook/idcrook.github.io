@@ -1,18 +1,18 @@
 ---
 layout: post
 comments: false
-title: macOS Emacs 26 display-line-numbers and me, or How I Became an Emacs Power User Today
+title: macOS Emacs 26 display-line-numbers, neotree and me, or How I Became an Emacs Power User Today
 date: 2018-06-10
 image: /images/neotree-with-line-numbers-meta.png
 ---
 
-I've been reviving my GNU Emacs config as part of becoming a more active daily user. I typically sit at a macOS workstation and connect to Linux machines. The release of [Emacs 26.1](https://github.com/emacs-mirror/emacs/blob/master/etc/NEWS.26) about a week ago gave me additional impetus to reflect modern `emacs`'s STILL-- as-ever-- **customizable, extensible** goodness.
+I've been reviving my GNU Emacs config as part of becoming a more active daily user. I typically use a macOS workstation, sometimes connecting to Linux machines (tramp/ssh). The release of [Emacs 26.1](https://github.com/emacs-mirror/emacs/blob/master/etc/NEWS.26) about a week ago gave me additional impetus to consume `Emacs`'s  **customizable, extensible** goodness.
 
 ## Background
 
 The origins of my current emacs config[^1] are from [Emacs Bootstrap](http://emacs-bootstrap.com). I forget exactly when I first declared "Emacs bankruptsy" and started over with the emacs-bootstrap files as a template. Originally I tried a `helm`-based completion setup but `helm` never really clicked with me.
 
-In my most recent overhaul, I have switched to `counsel`, `ivy`, and `project` for completions. And I am coming around to using `projectile` as I have a myriad of Git clones all over the place, including on remote hosts.
+In my most recent overhaul, I have switched to `counsel`, `ivy`/`swiper`,  and `company` for completions. And I am coming around to using `projectile` and its related packages. `projectile` helps me with myriad  Git clones, including on remote hosts.
 
 `tramp` is the greatest thing including the proverbial Emacs kitchen sink, BTW! :kissing_smiling_eyes:
 
