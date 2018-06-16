@@ -21,7 +21,7 @@ assets/js/MathJaxLocal.js
 _layouts/posts.html
 ```
 
-The first two are new files[^1]^,[^2] including the necessary javascript code and [customization](http://docs.mathjax.org/en/latest/configuration.html#using-a-local-configuration-file-with-a-cdn) for [MathJax](https://www.mathjax.org).  And the `_layouts/posts.html` edit is to embed the javascript into the jekyll-rendered post page.
+The first two are new files[^1]'[^2] including the necessary javascript code and [customization](http://docs.mathjax.org/en/latest/configuration.html#using-a-local-configuration-file-with-a-cdn) for [MathJax](https://www.mathjax.org).  And the `_layouts/posts.html` edit is to embed the javascript into the jekyll-rendered post page.
 
 
 ```diff
