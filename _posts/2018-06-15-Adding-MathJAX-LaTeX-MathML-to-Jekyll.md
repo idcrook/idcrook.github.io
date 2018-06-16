@@ -4,6 +4,7 @@ mathjax: true
 comments: false
 title: Adding MathJAX with LaTeX and MathML support to Jekyll
 date: 2018-06-15
+image: /images/mathjax-post-examples.png
 ---
 
 Pages, Numbers, and Keynote gots updates today with [LaTeX and MathML support](https://support.apple.com/en-us/HT202501), and it reminded me that I wanted to add to my blog here. I always wanted to do this ever since I saw what was I think [Dr. Drang's MathJax](http://www.leancrew.com/all-this/2009/12/mathjax-equations-on-the-web/) post. Enter [MathJax](https://www.mathjax.org)!
