@@ -8,11 +8,23 @@ image: /images/neotree-with-line-numbers-meta.png
 
 I've been reviving my GNU Emacs config as part of becoming a more active daily user. I typically use a macOS workstation, sometimes connecting to Linux machines (tramp/ssh). The release of [Emacs 26.1](https://github.com/emacs-mirror/emacs/blob/master/etc/NEWS.26) about a week ago gave me additional impetus to consume `Emacs`'s  **customizable, extensible** goodness.
 
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+
+- []() **Table of Contents**
+    - [`display-line-numbers`](#display-line-numbers)
+    - [`neotree` and `display-line-numbers` out of the box](#neotree-and-display-line-numbers-out-of-the-box)
+    - [The Process of Getting `neotree` and `display-line-numbers` to Play Nice Together](#the-process-of-getting-neotree-and-display-line-numbers-to-play-nice-together)
+    - [Finally SUCCESS...](#finally-success)
+- [Footnotes](#footnotes)
+
+<!-- markdown-toc end -->
+
+
 ## Background
 
-The origins of my current emacs config[^1] are from [Emacs Bootstrap](http://emacs-bootstrap.com). I forget exactly when I first declared "Emacs bankruptsy" and started over with the emacs-bootstrap files as a template. Originally I tried a `helm`-based completion setup but `helm` never really clicked with me.
+The origins of my current emacs config[^1] are from [Emacs Bootstrap](http://emacs-bootstrap.com). I forget exactly when I first declared "Emacs bankruptcy" and started over with the emacs-bootstrap files as a template. Originally I tried a `helm`-based completion setup but `helm` never really clicked with me.
 
-In my most recent overhaul, I have switched to `counsel`, `ivy`/`swiper`,  and `company` for completions. And I am coming around to using `projectile` and its related packages. `projectile` helps me with myriad  Git clones, including on remote hosts.
+In my most recent overhaul, I have switched to `counsel`, `ivy`/`swiper`,  and `company` for completions. And I am coming around to using `projectile` and its `related packages. `projectile` helps me with myriad  Git clones, including on remote hosts.
 
 `tramp` is the greatest thing including the proverbial Emacs kitchen sink, BTW! :kissing_smiling_eyes:
 
@@ -48,23 +60,23 @@ Users and developers are encouraged to switch to this new feature
 instead.
 ```
 
+So **Emacs 26** has deprecated `linum-mode`...
 
-Side note: filed an [issue](https://github.com/tom-tan/hlinum-mode/issues/5) for [hlinum-mode](https://github.com/tom-tan/hlinum-mode) since it does not yet work with Emacs 26 `display-line-numbers.el`
-
+Side note: filed an [issue](https://github.com/tom-tan/hlinum-mode/issues/5) for [hlinum-mode](https://github.com/tom-tan/hlinum-mode) since it works with `linum-mode` but does not work with Emacs 26 `display-line-numbers.el`. It was closed with a "not going to fix", as apparently the hooks that it had relied on are gone with the new, preferred-in-Emacs-26 way.
 
 ### `neotree` and `display-line-numbers` out of the box
 
 I have been using [neotree](https://github.com/jaypei/emacs-neotree) package, which I would describe as a "sidebar and dired in one".  It can work with `projectile` and so is a nice way to navigate and grok fresh projects.
 
-Since everything in Emacs is "just a buffer", `neotree` hadnt yet been updated to work with the `display-line-numbers` hotness new in Emacs 26. So it looked like this with `(global-display-line-mode 1)`:
+Since everything in Emacs is "just a buffer", `neotree` hadnt yet been updated to work with the `display-line-numbers` hotness new in Emacs 26. So it looked like this with `(global-display-line-numbers-mode 1)`:
 
 ![neotree with line numbers fail](/images/neotree-with-line-numbers.png "neotree with line numbers")
 
 Note the line numbers being included on the left side of the image, in the `neotree` buffer.
 
-### Getting `neotree` and `display-line-numbers` to play nice together
+### The Process of Getting `neotree` and `display-line-numbers` to Play Nice Together
 
-No problem. I knew that `neotree` already had a hook allowing this behavior to be overridden. In fact, the hook used to be the way to turn off `linum-mode` numbering (the pre-Emacs 26 way) in `neotree` before `neotree` itself added native support for recognizing `linum-mode` to turn off these numbers.  Lemme just use the same hook, `neo-after-create-hook`:
+No problem. I knew that `neotree` already had a hook allowing this behavior to be overridden. In fact, this same hook was the way to turn off `linum-mode` numbering (the pre-Emacs 26 way) in `neotree`[^2].  Lemme just use the same hook, `neo-after-create-hook`...
 
 ```emacs-lisp
 (defun display-line-numbers-disable-hook ()
@@ -76,7 +88,7 @@ No problem. I knew that `neotree` already had a hook allowing this behavior to b
 (add-hook 'neo-after-create-hook 'display-line-numbers-disable-hook)
 ```
 
-Problem solved, right? No.  Got an error in the emacs `mode-line` (mode-line status text is impossible to copy directly to system clipboard, BTW):
+Problem solved, right? _No.  Got an error_ in the emacs `mode-line` (mode-line status text is impossible to copy directly to system clipboard, BTW):
 
 ``` text
 Wrong number of arguments: (lambda nil "Disable display-line-numbers locally." (display-line-numbers-mode -1)), 1
@@ -88,13 +100,18 @@ I am by no means expert in `emacs-lisp` but have been reading about it and tryin
 (add-hook 'neo-after-create-hook (lambda () (display-line-numbers-mode -1)))
 ```
 
-Nope.  Got the same error!  _What is going on?_ ...looking in the `*Messages*` buffer:
+_Nope.  Got the same error! What is going on?
+...looking further at the error in the `*Messages*` buffer...
 
 ```text
 run-hook-with-args: Wrong number of arguments: (lambda nil (display-line-numbers-mode -1)), 1
 ```
 
-OK. This might be a helpful clue? The function being called is `run-hook-with-args`, but my `hook` functions didn't expect any arguments.  __**Some more googling**__ The emacs manual says that `run-hook-with-args` is a less common way to implement hooks. Tracing `neo-after-create-hook` in the `neotree.el` source I arrived at:
+OK. This might be a helpful clue? The function being called is `run-hook-with-args`, but my `hook` functions didn't expect any arguments.
+
+__**Some more googling**__
+
+The emacs manual says that `run-hook-with-args` is a less common way to implement hooks. Tracing `neo-after-create-hook` into the `neotree.el` source I arrived at:
 
 ```emacs-lisp
 (run-hook-with-args 'neo-after-create-hook '(window))
@@ -102,30 +119,27 @@ OK. This might be a helpful clue? The function being called is `run-hook-with-ar
 
 It turns out `neotree` was passing a `'(window)` argument to the hook function(s).
 
-
-
-
-## Finally...
+## Finally SUCCESS...
 
 So all I really needed was a `hook` function that could accept another argument to its invocation. OK, I just need to add this to my `hook` function. I remember seeing `&optional` all over the place in the emacs manual info browser in function call signatures. I'll just use one of those:
 
 ```emacs-lisp
-  ;; Disable line-numbers minor mode for neotree
-  (add-hook 'neo-after-create-hook (lambda (&optional dummy) (display-line-numbers-mode -1)))
+;; Disable line-numbers minor mode for neotree
+(add-hook 'neo-after-create-hook (lambda (&optional dummy) (display-line-numbers-mode -1)))
 ```
 
 :thumbsup: SUCCESS!
 
 ![neotree without line numbers success](/images/neotree-without-line-numbers.png "neotree without line numbers")
 
- For the full config I use for `neotree`:
+ For the full config I use for `neotree` on Emacs 26 and `global-display-line-numbers-mode`:
 
 {% gist 3a0f33b7dc8cba1dbd4d26959f48dd9b use-package_neotree.el %}
-
-
 
 Turns out having all the source code and built-in introspection and help files for your editor, that you can edit, are a "Really Good Idea":exclamation: :thumbsup:
 
 Emacs is like the *infinity editor*.
 
 [^1]: Sorry, I do not have my dotfiles publicly available. I do have my macOS and Linux configs in a shared git repo, but it is private to me
+
+[^2]: This was before `neotree` itself added native support for recognizing `linum-mode` to turn off these numbers.
