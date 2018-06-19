@@ -107,31 +107,24 @@ It turns out `neotree` was passing a `'(window)` argument to the hook function(s
 
 ## Finally...
 
-So all I really needed was a `hook` function that could accept another argument to its invocation. OK, I just need to add this to my `hook` function. I remember seeing `&optional` all over the place in the emacs manual info browser in function call signatures. I'll just use one of those.
+So all I really needed was a `hook` function that could accept another argument to its invocation. OK, I just need to add this to my `hook` function. I remember seeing `&optional` all over the place in the emacs manual info browser in function call signatures. I'll just use one of those:
 
 ```emacs-lisp
-;; sidebar and dired in one
-(use-package neotree
-  :bind
-  ("<f8>" . neotree-toggle)
-  :config
-  ;; needs package all-the-icons
-  (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
-
   ;; Disable line-numbers minor mode for neotree
   (add-hook 'neo-after-create-hook (lambda (&optional dummy) (display-line-numbers-mode -1)))
-
-  ;; Every time when the neotree window is opened, let it find current
-  ;; file and jump to node.
-  (setq neo-smart-open t)
-
-  ;; track ‘projectile-switch-project’ (C-c p p),
-  (setq projectile-switch-project-action 'neotree-projectile-action))
 ```
+
+:thumbsup: SUCCESS!
 
 ![neotree without line numbers success](/images/neotree-without-line-numbers.png "neotree without line numbers")
 
-Turns out having all the source code and built-in introspection and help files are a "Really Good Idea":exclamation: :thumbsup:
+ For the full config I use for `neotree`:
+
+{% gist 3a0f33b7dc8cba1dbd4d26959f48dd9b use-package_neotree.el %}
+
+
+
+Turns out having all the source code and built-in introspection and help files for your editor, that you can edit, are a "Really Good Idea":exclamation: :thumbsup:
 
 Emacs is like the *infinity editor*.
 
