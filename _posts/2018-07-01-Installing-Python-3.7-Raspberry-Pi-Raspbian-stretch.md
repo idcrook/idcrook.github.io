@@ -62,7 +62,7 @@ In a `screen` session:
 
 <kbd>C-a C-a</kbd> :: will alternate switching between last two accessed windows in `screen` session.
 
-<kbd>C-a d</kbd> :: will "**d**"etach from `screen` session, dropping you back to the screen you launched it from.
+<kbd>C-a d</kbd> :: will "**d**"etach from `screen` session, dropping you back to the shell you launched `screen` from.
 
 Finally
 `screen -D -R` will reconnect to running `screen` session
