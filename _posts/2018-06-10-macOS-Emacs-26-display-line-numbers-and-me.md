@@ -24,7 +24,7 @@ I've been reviving my GNU Emacs config as part of becoming a more active daily u
 
 The origins of my current emacs config[^1] are from [Emacs Bootstrap](http://emacs-bootstrap.com). I forget exactly when I first declared "Emacs bankruptcy" and started over with the emacs-bootstrap files as a template. Originally I tried a `helm`-based completion setup but `helm` never really clicked with me.
 
-In my most recent overhaul, I have switched to `counsel`, `ivy`/`swiper`,  and `company` for completions. And I am coming around to using `projectile` and its `related packages. `projectile` helps me with myriad  Git clones, including on remote hosts.
+In my most recent overhaul, I have switched to `counsel`, `ivy`/`swiper`,  and `company` for completions. And I am coming around to using `projectile` and its related packages. `projectile` helps me with myriad  Git clones, including on remote hosts.
 
 `tramp` is the greatest thing including the proverbial Emacs kitchen sink, BTW! :kissing_smiling_eyes:
 
@@ -100,7 +100,7 @@ I am by no means expert in `emacs-lisp` but have been reading about it and tryin
 (add-hook 'neo-after-create-hook (lambda () (display-line-numbers-mode -1)))
 ```
 
-_Nope.  Got the same error! What is going on?
+_Nope.  Got the same error! What is going on?_
 ...looking further at the error in the `*Messages*` buffer...
 
 ```text
