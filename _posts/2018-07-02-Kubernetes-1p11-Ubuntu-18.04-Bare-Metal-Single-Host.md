@@ -7,7 +7,7 @@ date: 2018-07-02
 image: /images/kubernetes-1.11-system-pods.png
 ---
 
-My Kubernetes 1.10 went down after some system updates and I couldn't bring it back.  It looked like incompatible `kubelet` versions and kubernetes tools updating underneath it from `1.10` to `1.11` was at least part of the problem alongside a `docker` upgrade. So I brought it back up quickly again using `kubeadm`, as described below.
+My Kubernetes 1.10 home cluster went down after some system updates and I couldn't bring it back.  It looked like incompatible `kubelet` versions and kubernetes tools updating underneath it from `1.10` to `1.11` was at least part of the problem alongside a `docker` upgrade. So I brought it back up quickly again using `kubeadm`, as described below.
 
 Adapted from my earlier post:
 
@@ -17,7 +17,7 @@ If you want to see how to include a monitoring dashboard (including with the req
 
 ## Install docker and kubernetes executables
 
-```shell
+```bash
 sudo apt install docker.io
 sudo systemctl enable docker
 
@@ -45,18 +45,22 @@ Since I had already done the above steps previously, there was no need to repeat
 ```bash
 IP_ADDR=$(ip addr show eno1 | grep -Po 'inet \K[\d.]+')
 echo $IP_ADDR
-sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=${IP_ADDR} --kubernetes-version
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=${IP_ADDR}
+```
+
+#### Prepare `kubectl`
+
+```bash
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
 ## Setup cluster with flannel network fabric
 
 See [https://github.com/coreos/flannel/blob/master/Documentation/kubernetes.md](https://github.com/coreos/flannel/blob/master/Documentation/kubernetes.md)
 
-```shell
-mkdir -p $HOME/.kube
-sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-sudo chown $(id -u):$(id -g) $HOME/.kube/config
-
+```bash
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/k8s-manifests/kube-flannel-rbac.yml
 ```
@@ -71,7 +75,7 @@ kubectl taint nodes --all node-role.kubernetes.io/master-
 
 ## Check that it is working and run some services!
 
-```
+```bash
 kubectl get all --namespace=kube-system
 kubectl get all --namespace=kube-system -o wide
 ```
