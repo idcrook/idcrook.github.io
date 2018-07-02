@@ -45,19 +45,25 @@ C-a c
 sudo apt-get install -y htop
 sudo htop
 C-a C-a
+# ... make -j 5 -l 4 ...
+C-a C-a
 ```
 
 <kbd>C-a c</kbd>
 Means hold down <kbd>Control</kbd> key and type letter <kbd>a</kbd>, then release <kbd>Control</kbd> key add type letter <kbd>c</kbd>
 
 <kbd>C-a C-a</kbd>
-Means hold down <kbd>Control</kbd> key and type letter <kbd>a</kbd>, then keep <kbd>Control</kbd> presses and type another letter <kbd>a</kbd>
+Means hold down <kbd>Control</kbd> key and type letter <kbd>a</kbd>, then keep <kbd>Control</kbd> pressed and type another letter <kbd>a</kbd>
 
 
 In a `screen` session:
+
 <kbd>C-a c</kbd> :: will "**c**"reate another `screen` window.
+
 <kbd>C-a C-a</kbd> :: will alternate switching between last two accessed windows in `screen` session.
+
 <kbd>C-a d</kbd> :: will "**d**"etach from `screen` session, dropping you back to the screen you launched it from.
+
 Finally
 `screen -D -R` will reconnect to running `screen` session
 
