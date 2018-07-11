@@ -1,0 +1,10 @@
+---
+layout: post
+title: $title
+date: $date
+mathjax: $use_mathjax
+comments: $use_comments
+image: /${imagepath}
+---
+
+description summary paragraph
