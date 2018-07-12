@@ -89,6 +89,8 @@ def sanitize_title_str_for_filename(title_str):
     """Do any string normalization needed for a filename."""
     # lowercase the title string amd switch whitespace to hyphens
     s = re.sub(r"\s+", '-', title_str.lower())
+    # drop apostrophes
+    s = re.sub(r"'", '', s)
     return s
 
 
