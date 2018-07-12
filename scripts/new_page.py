@@ -72,7 +72,7 @@ def cli(title, mathjax, comments, image):
     output = source.safe_substitute(d)
     try:
         write_file(output_filepath, output)
-        click.echo('Wrote %s' % output_filepath)
+        click.secho('Wrote %s' % output_filepath, bold=True)
     except FileExistsError as e:
         click.echo(e.message, err=True)
         click.secho(
