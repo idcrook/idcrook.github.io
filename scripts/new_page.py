@@ -16,7 +16,7 @@ from string import Template
 import click  # pip3 install click
 from titlecase import titlecase  # pip3 install titlecase
 
-SCRIPT_PATH = os.path.dirname(os.path.abspath( __file__ ))
+SCRIPT_PATH = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_FILEPATH = os.path.join(SCRIPT_PATH, 'new_page.template')
 OUTPUT_DIR = '_posts'
 DEFAULT_IMAGE_NAME = 'images/github-identicon-idcrook.png'
@@ -24,30 +24,42 @@ DEFAULT_IMAGE_NAME = 'images/github-identicon-idcrook.png'
 TEMPLATE_FILEOBJ = open(TEMPLATE_FILEPATH, 'r')
 TODAY = datetime.date.today()
 
+
 @click.command()
 @click.argument('title')  # TITLE required
-@click.option('--mathjax', default=False, is_flag=True, help='Enable mathjax on post.')
-@click.option('--comments', default=False, is_flag=True, help='Enable comments on post.')
-@click.option('--image', default=DEFAULT_IMAGE_NAME, type=click.Path(),
-              help='An image for open graph twitter card.')
+@click.option(
+    '--mathjax', default=False, is_flag=True, help='Enable mathjax on post.')
+@click.option(
+    '--comments', default=False, is_flag=True, help='Enable comments on post.')
+@click.option(
+    '--image',
+    default=DEFAULT_IMAGE_NAME,
+    type=click.Path(exists=True),
+    help='An image for open graph twitter card.')
 def cli(title, mathjax, comments, image):
+    """Create a new blog post page with TITLE."""
     today_str = TODAY.isoformat()
     title_str = form_title_str_from_title(title)
-    output_filepath = os.path.join(OUTPUT_DIR, form_filename(today_str, title_str))
-
+    output_filepath = os.path.join(OUTPUT_DIR,
+                                   form_filename(today_str, title_str))
     if not os.path.exists(image):
-        click.secho('WARNING: Cannot find image file "%s"' % image, bold=True, err=True)
+        click.secho(
+            'WARNING: Cannot find image file "%s"' % image,
+            bold=True,
+            err=True)
         image = 'images/{imagepath}'
 
     if image == DEFAULT_IMAGE_NAME:
         click.secho('WARNING: Did not provide an image file', err=True)
         image = 'images/{imagepath}'
 
-
     # prepare for template expansion
-    d = dict(title=title_str, date=today_str, use_mathjax=mathjax,
-             use_comments=comments, imagepath=image)
-
+    d = dict(
+        title=title_str,
+        date=today_str,
+        use_mathjax=mathjax,
+        use_comments=comments,
+        imagepath=image)
 
     # click.echo('%s' % title)
     # click.echo('%s' % image)
@@ -63,12 +75,15 @@ def cli(title, mathjax, comments, image):
         click.echo('Wrote %s' % output_filepath)
     except FileExistsError as e:
         click.echo(e.message, err=True)
-        click.secho('Change name or remove file and try again', bold=True, err=True)
+        click.secho(
+            'Change name or remove file and try again', bold=True, err=True)
+
 
 def form_title_str_from_title(title):
     """Do any simple string normalization here."""
     s = titlecase(title)
     return s
+
 
 def sanitize_title_str_for_filename(title_str):
     """Do any string normalization needed for a filename."""
@@ -76,11 +91,13 @@ def sanitize_title_str_for_filename(title_str):
     s = re.sub(r"\s+", '-', title_str.lower())
     return s
 
+
 def form_filename(today_str, title_str):
     """Returns a string based on date and title strings for post filename."""
     title_fname_str = sanitize_title_str_for_filename(title_str)
     s = today_str + '-' + title_fname_str + '.md'
     return s
+
 
 def write_file(filepath, contents):
     if os.path.exists(filepath):
@@ -88,9 +105,11 @@ def write_file(filepath, contents):
     with open(filepath, 'w') as output:
         output.write(contents)
 
+
 class Error(Exception):
     """Base class for exceptions in this module."""
     pass
+
 
 class FileExistsError(Error):
     """Exception raised for output file existing.
@@ -104,7 +123,6 @@ class FileExistsError(Error):
         self.filepath = filepath
         self.message = message
 
+
 if __name__ == '__main__':
-    # print (SCRIPT_PATH)
-    # print (TEMPLATE_FILE)
     cli()
