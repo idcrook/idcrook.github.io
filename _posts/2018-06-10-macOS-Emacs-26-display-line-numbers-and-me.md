@@ -15,6 +15,9 @@ I've been reviving my GNU Emacs config as part of becoming a more active daily u
     - [`neotree` and `display-line-numbers` out of the box](#neotree-and-display-line-numbers-out-of-the-box)
     - [The Process of Getting `neotree` and `display-line-numbers` to Play Nice Together](#the-process-of-getting-neotree-and-display-line-numbers-to-play-nice-together)
     - [Finally SUCCESS...](#finally-success)
+      - [BEGIN_UPDATE 2018-Sep-18](#begin_update-2018-sep-18)
+      - [END_UPDATE 2018-Sep-18](#end_update-2018-sep-18)
+    - [Conclusion](#conclusion)
 - [Footnotes](#footnotes)
 
 <!-- markdown-toc end -->
@@ -136,9 +139,31 @@ So all I really needed was a `hook` function that could accept another argument 
 
 {% gist 3a0f33b7dc8cba1dbd4d26959f48dd9b use-package_neotree.el %}
 
+#### BEGIN_UPDATE 2018-Sep-18
+
+After this post made it on [reddit](https://www.reddit.com/r/emacs/comments/9gjb0s/how_to_hide_line_numbers_in_neotrees_buffer/) and Sacha Chua's [weekly news](http://sachachua.com/blog/2018/09/2018-09-17-emacs-news/), there was a suggestion on how to use an [established Emacs Lisp idiom](https://www.reddit.com/r/emacs/comments/9gjb0s/how_to_hide_line_numbers_in_neotrees_buffer/e64jfkf/) in this context.
+
+Instead of
+
+```emacs-lisp
+;; original post had this
+(lambda (&optional dummy) ...
+```
+a better way would be
+```emacs-lisp
+;; more idiomatic of emacs
+(lambda (&rest _) ...
+```
+so I've updated the gist.
+#### END_UPDATE 2018-Sep-18
+
+# Conclusion
+
 Turns out having all the source code and built-in introspection and help files for your editor, that you can edit, are a "Really Good Idea":exclamation: :thumbsup:
 
 Emacs is like the *infinity editor*.
+
+# Footnotes
 
 [^1]: Sorry, I do not have my dotfiles publicly available. I do have my macOS and Linux configs in a shared git repo, but it is private to me
 
