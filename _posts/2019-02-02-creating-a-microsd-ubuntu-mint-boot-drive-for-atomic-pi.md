@@ -7,7 +7,7 @@ comments: True
 image: /images/atomic_pi_breakout_psu_card.jpg
 ---
 
-I have recently received an [Atomic Pi][atomic_pi] from its [Kickstarter][kickstarter]. And while the pre-installed Lubuntu image was adequate, I wanted to try something more mainstream and also seem if I could recreate the Linux hardware support for GPIO and other items on its Kickstarter associated [breakout board][enchillada].
+I have recently received an [Atomic Pi][atomic_pi] from its [Kickstarter][kickstarter]. And while the pre-installed Lubuntu image was adequate, I wanted to try something more mainstream and also see if I could recreate the Linux hardware support for GPIO and other items on its Kickstarter associated [breakout board][enchillada].
 
 # Power on
 
@@ -64,6 +64,7 @@ The board should reboot and find the Linux OS on the µSD card and boot into the
 
 Congrats, you have a working Mint Cinnamon desktop on your Atomic Pi. The "First Boot" app will let you perform additional major configurations. No missing drivers were found in my install. The original OS partition from the eMMC module labeled `AtomicPi` will be mounted automatically and shown on your desktop.
 
+I didn't get around to trying out GPIO access, so that might appear in a future post.
 
 [atomic_pi]: https://www.digital-loggers.com/api.html
 [kickstarter]: https://www.kickstarter.com/projects/323002773/atomic-pi-a-high-power-alternative-to-rpi
