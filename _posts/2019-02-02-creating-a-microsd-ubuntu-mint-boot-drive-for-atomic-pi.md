@@ -52,9 +52,9 @@ On the screen that comes up it had the now-inserted uSD card at `/dev/sdb`. So I
 
 Choose the appropriate Timezone region config, keyboard layout and language settings, and choose the options for a user account/login and password.
 
-Also selected the Download Third Party drivers when asked.
+Also, select the Download Third Party drivers when asked.
 
-The installer will download additional files and packages and configure a full, working system. When completed (assuming there were no errors), it will ask you reboot, along the way pausing to prompt you to remove installer drive.  Remove the USB thumb drive (leave the freshly installed µSD inserted) and hit <kbd>Enter</kbd> or whatever to reboot.
+The installer will download additional files and packages and configure a full, working system. When completed (assuming there were no errors), it will ask you to reboot, along the way pausing to prompt you to remove installer drive.  Remove the USB thumb drive (leave the freshly installed µSD inserted) and hit <kbd>Enter</kbd> or whatever to reboot.
 
 The board should reboot and find the Linux OS on the µSD card and boot into the Mint desktop. Login with the user account/credentials you supplied to the installer.
 
@@ -62,7 +62,7 @@ The board should reboot and find the Linux OS on the µSD card and boot into the
 
 ![atomic pi linux mint desktop icons >](/images/atomic_pi_linux_mint_desktop.png)
 
-Congrats, you have a working Mint Cinnamon desktop on your Atomic Pi. The "First Boot" app will let you perform additional major configurations. The original OS partition from the eMMC module labeled `AtomicPi` will be mounted automatically and shown on your desktop.
+Congrats, you have a working Mint Cinnamon desktop on your Atomic Pi. The "First Boot" app will let you perform additional major configurations. No missing drivers were found in my install. The original OS partition from the eMMC module labeled `AtomicPi` will be mounted automatically and shown on your desktop.
 
 
 [atomic_pi]: https://www.digital-loggers.com/api.html
