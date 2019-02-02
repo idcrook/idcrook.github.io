@@ -64,10 +64,11 @@ The board should reboot and find the Linux OS on the µSD card and boot into the
 
 Congrats, you have a working Mint Cinnamon desktop on your Atomic Pi. The "First Boot" app will let you perform additional major configurations. No missing drivers were found in my install. The original OS partition from the eMMC module labeled `AtomicPi` will be mounted automatically and shown on your desktop.
 
-I didn't get around to trying out GPIO access, so that might appear in a future post.
+I didn't get around to trying out GPIO access, so that might appear in a future post. Also I have found and am using the [/r/Atomic_Pi subreddit][atomic_pi_reddit]
 
 [atomic_pi]: https://www.digital-loggers.com/api.html
 [kickstarter]: https://www.kickstarter.com/projects/323002773/atomic-pi-a-high-power-alternative-to-rpi
 [enchillada]: https://www.digital-loggers.com/enchillada.pdf
 [cinnamon_mint_torrent]: https://torrents.linuxmint.com/torrents/linuxmint-19.1-cinnamon-64bit.iso.torrent
 [balena_etcher]: https://www.balena.io/etcher/
+[atomic_pi_reddit]: https://www.reddit.com/r/Atomic_Pi/
