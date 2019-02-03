@@ -62,7 +62,7 @@ The board should reboot and find the Linux OS on the µSD card and boot into the
 
 ![atomic pi linux mint desktop icons >](/images/atomic_pi_linux_mint_desktop.png)
 
-Congrats, you have a working Mint Cinnamon desktop on your Atomic Pi. The "First Boot" app will let you perform additional major configurations. No missing drivers were found in my install. The original OS partition from the eMMC module labeled `AtomicPi` will be mounted automatically and shown on your desktop.
+Congrats, you have a working Mint Cinnamon desktop on your Atomic Pi. The "First Boot" app will let you perform additional major configurations. No missing drivers were identified in my install. The original OS partition from the eMMC module labeled `AtomicPi` will be mounted automatically and shown on your desktop.
 
 I didn't get around to trying out GPIO access, so that might appear in a future post. Also I have found and am using the [/r/Atomic_Pi subreddit][atomic_pi_reddit]
 
