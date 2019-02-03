@@ -48,13 +48,13 @@ From the booted live image desktop, now you can connect the network (wifi has an
 
 In the popup warning/action dialog, I chose the option to unmount the `mmcblk0` device (this is the onboard eMMC module) that the Live installer seems to mount. And then chose the bottom "Other" option in the installer wizard to manually choose partitions and drives, since we are going to install to uSD. Don't want to have the installer guess wrong, and accidentally clobber the original Lubuntu on the eMMC, do we? This is probably what you want too.
 
-On the screen that comes up it had the now-inserted uSD card at `/dev/sdb`. So I created a new `ext4` partition (~32GB should be sufficient, on a 64GB card)), mount point `"/"` at `sdb1`. Create a second 512 MB partition `FAT32`, no mount point, at `sdb2`. This is not be used or formatted by the installer and is not used further in this example, so you can skip this one.  Should be good to go, so write the partitions and go onto the next step.
+On the screen that comes up it had the now-inserted uSD card at `/dev/sdb` (the installer USB drive at `/dev/sda`). So I created a new `ext4` partition (~32GB should be sufficient, on a 64GB card)), mount point `"/"` at `sdb1`. Create a second 512 MB partition `FAT32`, no mount point, at `sdb2`. This will not be used or formatted by the installer and is not used further in this example, so you can skip this one.  For the GRUB bootloader installation location, I used `/dev/sdb` (not one of the sub-partitions).  Should be good to go, so write the partition tables to disk and go onto the next step.
 
 Choose the appropriate Timezone region config, keyboard layout and language settings, and choose the options for a user account/login and password.
 
 Also, select the Download Third Party drivers when asked.
 
-The installer will download additional files and packages and configure a full, working system. When completed (assuming there were no errors), it will ask you to reboot, along the way pausing to prompt you to remove installer drive.  Remove the USB thumb drive (leave the freshly installed µSD inserted) and hit <kbd>Enter</kbd> or whatever to reboot.
+The installer will download additional files and packages and configure a full, working system. When completed (assuming there were no errors), it will ask you to reboot, along the way pausing to prompt you to remove installer drive.  Remove the USB thumb drive (leave the µSD with the freshly installed OS inserted) and hit <kbd>Enter</kbd> or whatever to reboot.
 
 The board should reboot and find the Linux OS on the µSD card and boot into the Mint desktop. Login with the user account/credentials you supplied to the installer.
 
