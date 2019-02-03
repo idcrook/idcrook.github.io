@@ -25,7 +25,7 @@ There is 16GB eMMC storage included on the Atomic Pi board, which makes it a goo
 
 Other storage possibilities are a microSD card slot and a USB 3.0 port (and also, a USB 2.0 port if you have the breakout board).
 
-The first boot, I had connected an Ethernet cable into the APi, and the BIOS waited to PXE network boot, as this is enabled in the uEFI BIOS by default. It will block there unless your hit <kbd>Esc</kbd> twice (once for IPv4, another for IPv6). This behavior (`Boot from PXE`) can be disabled in the BIOS so that intervention at boot time is required.
+The first boot, I had connected an Ethernet cable into the APi, and the BIOS waited to PXE network boot, as this is enabled in the uEFI BIOS by default. It will block there unless your hit <kbd>Esc</kbd> twice (once for IPv4, another for IPv6). This behavior (`Boot from PXE`) can be disabled in the BIOS so that intervention at boot time isn't required.
 
 From there if no other bootable sources are found, the board will boot using the Lubuntu image contained on the built-in eMMC storage.
 
@@ -36,7 +36,7 @@ From there if no other bootable sources are found, the board will boot using the
 After booting and updating the Lubuntu OS contained on the eMMC, I decided to install Ubuntu `Linux Mint 19.1 "Tessa" Cinnamon (64-bit)`. Furthermore, I decided to install it onto an µSD card. This required additional devices:
 
 1. a USB flash drive to put the Live image installer onto
-1. a µSD card (up to 128GB IIRC) that will go into the board's built-in µSD card slot socket.
+1. a µSD card (up to 256GB) that will go into the board's built-in µSD card slot socket.
 1. you will also need a USB keyboard (and strongly suggested, a **mouse**)
    - possibly this also means a small USB hub (to connect both the keyboard and mouse), since one of the USB slots is going to contain the bootable Live image installer drive
 
