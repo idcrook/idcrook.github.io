@@ -32,7 +32,7 @@ The `homebrew-emacs-head` recipe can also be configured to build a emacs26 versi
 
 I now (as of this last week) have my `.emacs.d` startup files in a public github repo. [Here](https://github.com/idcrook/.emacs.d/blob/bb05f12d63a4e7753c1585938fc76d3142aea105/elisp/base-platforms.el#L167-L174) is the code that enables the macOS (`system-type`: `'darwin`) emoji font in Emacs (gist follows)
 
-{% gist 9eef475e0addc019f241850d92cfd763 platform.el %}
+{% gist 9eef475e0addc019f241850d92cfd763 %}
 
 I don't now if this is the exact appropriate code, but it is working for me. It basically lets emacs know that it can use the `Apple Color Emoji` font.
 
@@ -77,4 +77,4 @@ Enjoy 🍰️
 
 [^1]: Found on emacs subreddit : [Now that Homebrew has removed build options, how do I get Imagemagick support for emacs on Mac OS?](https://www.reddit.com/r/emacs/comments/bhjtf9/now_that_homebrew_has_removed_build_options_how/eltls2l?utm_source=share&utm_medium=web2x)
 
-[^2]: <<https://github.com/dunn/company-emoji>>
+[^2]: <https://github.com/dunn/company-emoji>
