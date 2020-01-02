@@ -100,6 +100,7 @@ sass:
 #  style: :expand # You might prefer ":compressed
 #  style: :compressed # You might prefer ":expand"
 
+### https://github.com/pages-themes/primer
 theme: jekyll-theme-primer
 
 # Use the following plug-ins
@@ -119,6 +120,7 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
   - LICENSE
   - README.md
   - README.upstream.md
