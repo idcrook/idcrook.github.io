@@ -1,13 +1,14 @@
 What?
 -----
 
-Serve the content on this blog using a docker container that understand github-pages flavor of jekyll.
+Serve the content on this blog using a docker container.
 
-### How?
+How?
+----
 
-[Docker jekyll](https://github.com/jekyll/docker-jekyll) at github.
+-	Docker images, and CI builders for Jekyll. [envygeeks/jekyll-docker](https://github.com/envygeeks/jekyll-docker)
 
-Run on OS X
+### Commands
 
 ```bash
 cd ~/projects/idcrook.github.io
@@ -22,7 +23,7 @@ sudo docker run --rm \
 
 # ... Bundled gems are installed into `/usr/local/bundle`
 
-# server (rebuilds after changes)
+# run as server (rebuilds after changes)
 sudo docker run --rm \
   --volume="$PWD:/srv/jekyll" \
   --volume="$PWD/vendor/bundle:/usr/local/bundle" \
@@ -36,20 +37,17 @@ open http://0.0.0.0:4000
 
 ### Changing to supported theme
 
--	assumes `rbenv` already installed/configured
-
 in `Gemfile`, use
 
 ```
+source 'https://rubygems.org'
+
 gem "github-pages", group: :jekyll_plugins
-```
+# following is a workaround for
+#     jekyll 3.8.5 | Error:  uninitialized constant Faraday::Error::ClientError
+#     Did you mean?  Faraday::ClientError
 
-then can install dependencies (via `rbenv`\)
-
-```shell
-gem install bundler
-bundle install
-jekyll serve
+gem 'faraday', '0.17.3'
 ```
 
 And in `_config.yml`
