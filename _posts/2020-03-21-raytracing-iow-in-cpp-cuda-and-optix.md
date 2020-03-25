@@ -4,7 +4,6 @@ title: Raytracing In One Weekend Series in C++, CUDA, and OptiX
 date: 2020-03-21
 mathjax: False
 comments: False
-image: /images/{imagepath}
 ---
 
 One day, I found Peter Shirley's [Ray Tracing In One Weekend](https://github.com/RayTracing/raytracing.github.io) Book Series. I was able to implement my [own copy](https://github.com/idcrook/weeker_raytracer/tree/master/src/Cpp) of the code from his books, eventually also incorporating some versions using [CUDA](https://github.com/idcrook/weeker_raytracer/tree/master/src/Cuda) and Nvidia's [Optix 6.5](https://github.com/idcrook/weeker_raytracer/tree/master/src/OptiX) ray-tracing frameworks.
