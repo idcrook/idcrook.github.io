@@ -7,7 +7,7 @@ comments: True
 image: /images/emacs-editing-optix-cuda-header.png
 ---
 
-Recently, I got an Nvidia GeForce (RTX series) card. I've been using it to learn about graphics programming and raytracing and things like that under Linux. And I am using Emacs to editing the C++ files that all the graphics SDKs seem to use.
+Recently, I got an Nvidia GeForce (RTX series) card. I've been using it to learn about graphics programming and raytracing and things like that under Linux. And I am using Emacs to edit the C++ files that all the graphics SDKs seem to use.
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 
