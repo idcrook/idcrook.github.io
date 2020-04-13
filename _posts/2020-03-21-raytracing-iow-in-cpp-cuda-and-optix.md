@@ -4,7 +4,6 @@ title: Raytracing In One Weekend Series in C++, CUDA, and OptiX
 date: 2020-03-21
 mathjax: False
 comments: False
-image: /images/{imagepath}
 ---
 
 One day, I found Peter Shirley's [Ray Tracing In One Weekend](https://github.com/RayTracing/raytracing.github.io) Book Series. I was able to implement my [own copy](https://github.com/idcrook/weeker_raytracer/tree/master/src/Cpp) of the code from his books, eventually also incorporating some versions using [CUDA](https://github.com/idcrook/weeker_raytracer/tree/master/src/Cuda) and Nvidia's [Optix 6.5](https://github.com/idcrook/weeker_raytracer/tree/master/src/OptiX) ray-tracing frameworks.
@@ -21,11 +20,11 @@ I switched to Cmake from a generic Makefile early on. I had never used CMake bef
 
 CMake is adequate for nested project builds, but I spent more time dinking with CMake settings to get them to do what I wanted and learning about its commands than I did coding (also not an exaggeration). I have not tested any builds on Windows, but the code compiles (and runs, if all required pre-reqs are installed) on macOS and Linux.
 
-The `Cpp` subdirectory, found at `/src/Cpp` in the repo is a faithful reproduction of the In One Weekend code, meaning it doesn't use any fancy intrinsics for SIMD calculations and it is single-threaded. So even on a CPU clocked at 4 GHz, runtimes are measured in hours for the more [advanced scenes](https://github.com/idcrook/weeker_raytracer#image-renders-c-single-thread-cpu).
+The `Cpp` subdirectory, found at `/src/Cpp` in the repo is a faithful reproduction of the In One Weekend code, meaning it doesn't use any fancy intrinsics for SIMD calculations and it is single-threaded. So even on a CPU clocked at 4 GHz, runtimes are measured in hours for the more [advanced scenes](https://github.com/idcrook/weeker_raytracer/blob/master/README.md#image-renders-c-single-thread-cpu).
 
 ## CUDA
 
-CUDA is a C++ environment where code can be written to target running on an Nvidia GPU alongside, or instead of, just a CPU.  To develop with it, a [toolkit from Nvidia](https://developer.nvidia.com/cuda-toolkit) is needed. To run CUDA device code, a supported Nvidia graphics card is needed. And that also means calculations, by nature, can run across a large number of graphics cores in parallel. The [final scene](https://github.com/idcrook/weeker_raytracer#image-renders-cuda) from In One Weekend in CUDA version [rendered in seconds](https://github.com/idcrook/weeker_raytracer#early-performance-comparisons) (versus minutes in the CPU single-threaded version).
+CUDA is a C++ environment where code can be written to target running on an Nvidia GPU alongside, or instead of, just a CPU.  To develop with it, a [toolkit from Nvidia](https://developer.nvidia.com/cuda-toolkit) is needed. To run CUDA device code, a supported Nvidia graphics card is needed. And that also means calculations, by nature, can run across a large number of graphics cores in parallel. The [final scene](https://github.com/idcrook/weeker_raytracer/blob/master/README.md#image-renders-cuda) from In One Weekend in CUDA version [rendered in seconds](https://github.com/idcrook/weeker_raytracer/blob/master/README.md#early-performance-comparisons) (versus minutes in the CPU single-threaded version).
 
 I am a novice to Cuda programming. Like, [I had never used CUDA code before](https://github.com/idcrook/weeker_raytracer/tree/master/notes/cuda), and used [another person's repo](https://github.com/rogerallen/raytracinginoneweekendincuda) as reference. The part where I fell down and couldn't get back up was adapting the Bounded Volume Hierarchies (BVH-s) tree data structure for use on the CPUs. The [person](https://github.com/rogerallen) I drafted off of also ran into this. I didn't have a sophisticated enough understand on how to pass data structures back and forth between CPU <-> GPU. Nor did I have relevant experience to convert the data structures to generate and traverse on "device"-only. It is "device" (GPU) as opposed to "host" (CPU) in CUDA parlance.
 
@@ -40,7 +39,7 @@ To download SDKs, you must be a member of the NVIDIA Developer Program. With Opt
 
 OptiX contains special primitives and features for raytracing and a C++ wrapper library in the SDK. I closely followed in the path of [one person](https://github.com/trevordblack/OptixInOneWeekend) and [another person](https://github.com/joaovbs96/OptiX-Path-Tracer) who had done the In One Weekend series in OptiX.
 
-The implementations are [blazing fast](https://github.com/idcrook/weeker_raytracer#image-renders-optix-gpu) for renders and because of that, much larger scenes or sample quality can be obtained.
+The implementations are [blazing fast](https://github.com/idcrook/weeker_raytracer/blob/master/README.md#image-renders-optix-gpu) for renders and because of that, much larger scenes or sample quality can be obtained.
 
 Another interested feature is that pieces of the ray-tracing process can be written in shader modules in CUDA code.  Here's a snippet from the repo for [calculating intersections with a sphere primitive](https://github.com/idcrook/weeker_raytracer/blob/master/src/OptiX/RestOfLife/geometry/sphere.cu#L39-L71) :
 
