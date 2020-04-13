@@ -24,6 +24,7 @@ sudo docker run --rm \
 # ... Bundled gems are installed into `/usr/local/bundle`
 
 # run as server (rebuilds after changes)
+export JEKYLL_VERSION=3.8
 sudo docker run --rm \
   --volume="$PWD:/srv/jekyll" \
   --volume="$PWD/vendor/bundle:/usr/local/bundle" \
