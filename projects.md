@@ -7,7 +7,6 @@ permalink: /projects/
 #### Source code - [GitHub repos (@idcrook)](https://github.com/idcrook?tab=repositories){: target="_blank"}
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
-**Table of Contents**
 
 - [Projects](#projects)
     - [Servers / Services](#servers--services)
