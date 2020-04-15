@@ -90,7 +90,7 @@ baseurl: ""
 permalink: /:title/
 
 # https://jekyllrb.com/docs/pagination/
-paginate: 5
+paginate: 8
 paginate_path: "/page-:num/"
 
 # # Set the Sass partials directory, as we're using @imports
