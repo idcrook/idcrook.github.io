@@ -114,6 +114,6 @@ So, some other related emacs packages and config for cmake. the `irony-cdb-autos
 
 I have finally made it possible to share my .emacs.d, available in a GitHub repo [idcrook/.emacs.d](https://github.com/idcrook/.emacs.d)
 
-The C++ file .emacs.d init file is found at [lang-cpp.el](https://github.com/idcrook/.emacs.d/blob/master/elisp/lang-cpp.el)
+The C++ file .emacs.d init file is found at [lang-cpp.el](https://github.com/idcrook/.emacs.d/blob/main/elisp/lang-cpp.el)
 
 It is also included as part of my dotfiles repo, [i-dotfiles](https://github.com/idcrook/i-dotfiles) (as a git submodule)

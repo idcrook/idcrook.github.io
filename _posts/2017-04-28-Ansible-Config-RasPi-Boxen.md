@@ -34,4 +34,4 @@ Along with configuration of the operating system, I have added language support 
 
 ## Using the ansible playbooks
 
-I've shared the code on that repo, and used across many Raspbian based installations. The README's [Getting Started](https://github.com/idcrook/raspberry-pi-rotary-phone#getting-started) section covers pre-reqs and details on re-using the code.  At a high-level, you need imaged Pis, known IP address, SSH access, ansible installed, and clone of the GitHub repo. Further details are in the [README](https://github.com/idcrook/raspberry-pi-rotary-phone/blob/master/README.md#getting-started).
+I've shared the code on that repo, and used across many Raspbian based installations. The README's [Getting Started](https://github.com/idcrook/raspberry-pi-rotary-phone#getting-started) section covers pre-reqs and details on re-using the code.  At a high-level, you need imaged Pis, known IP address, SSH access, ansible installed, and clone of the GitHub repo. Further details are in the [README](https://github.com/idcrook/raspberry-pi-rotary-phone/blob/main/README.md#getting-started).

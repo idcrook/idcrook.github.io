@@ -26,7 +26,7 @@ I was learning swiftlang in the Swift 2/3 era, and after my recent introduction 
 
 ## rust and cargo
 
-I have been using an Ubuntu Linux machine to learn Rust. I have [decided to use](https://github.com/idcrook/burst/blob/master/notes/emacs.org) with the web+sh [rustup installer](https://rustup.rs/). It has been and incorporated into my dotfiles.
+I have been using an Ubuntu Linux machine to learn Rust. I have [decided to use](https://github.com/idcrook/burst/blob/main/notes/emacs.org) with the web+sh [rustup installer](https://rustup.rs/). It has been and incorporated into my dotfiles.
 
 
 ```shell
@@ -37,7 +37,7 @@ This has worked on Ubuntu Linux, a Raspberry Pi running Raspbian buster, and mac
 
 [Cargo](https://doc.rust-lang.org/cargo) is the Rust *package manager* and is included in its install. It is wonderful, handling library dependencies, builds, testing, crates.io  and more.
 
-For the emacs side of things, I started with the Rust section on [http://emacs-bootstrap.com/](http://emacs-bootstrap.com/) and have arrived at a modified version of that. A list of emacs packages (from my [lang-rust.el](https://github.com/idcrook/.emacs.d/blob/master/elisp/lang-rust.el) file):
+For the emacs side of things, I started with the Rust section on [http://emacs-bootstrap.com/](http://emacs-bootstrap.com/) and have arrived at a modified version of that. A list of emacs packages (from my [lang-rust.el](https://github.com/idcrook/.emacs.d/blob/main/elisp/lang-rust.el) file):
 
  - rust-mode
  - flycheck-rust
@@ -59,7 +59,7 @@ cargo +nightly install racer
 
 ### Full .emacs.d for Rust
 
-Some comments and details elided, Full file here:  [lang-rust.el](https://github.com/idcrook/.emacs.d/blob/master/elisp/lang-rust.el)
+Some comments and details elided, Full file here:  [lang-rust.el](https://github.com/idcrook/.emacs.d/blob/main/elisp/lang-rust.el)
 
 ```lisp
 ;; started from http://emacs-bootstrap.com/

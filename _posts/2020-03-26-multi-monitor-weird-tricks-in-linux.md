@@ -50,7 +50,7 @@ After iterating with this for way too long, I finally was able to reliably set b
 
 Ultimately, the incantation was determined by checking the Xorg.log file to see what appeared when the `nvidia-settings` applet changed the resolutions, and trying various partially documented strings in nvidia driver manpages.
 
-[set_vader_desktop_resolution.sh](https://github.com/idcrook/i-dotfiles/blob/master/homedir/bin/linux/set_vader_desktop_resolution.sh)
+[set_vader_desktop_resolution.sh](https://github.com/idcrook/i-dotfiles/blob/main/homedir/bin/linux/set_vader_desktop_resolution.sh)
 
 ```shell
 #!/bin/sh -x
@@ -71,7 +71,7 @@ The integrated graphics system presented another problem. The Gnome desktop Sett
 
 Fortunately, the Intel driver seems to play nice with `xrandr`, a utility that is designed to deal with multiple monitors and resolutions and the like. And new modes added with it even show up in the Displays applet. It's not necessary to use Displays control panel once the command line script has been run, but it is interesting to me to note that.
 
-[set_yoda_desktop_resolution.sh](https://github.com/idcrook/i-dotfiles/blob/master/homedir/bin/linux/set_yoda_desktop_resolution.sh)
+[set_yoda_desktop_resolution.sh](https://github.com/idcrook/i-dotfiles/blob/main/homedir/bin/linux/set_yoda_desktop_resolution.sh)
 
 ```shell
 #!/bin/bash -x

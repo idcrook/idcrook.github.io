@@ -56,7 +56,7 @@ and
 
 ## Running Emacs27 with `company-emoji`
 
-Launching the new `Emacs.app` [as usual](https://github.com/idcrook/i-dotfiles/blob/master/homedir/bin/macos/Emacs.sh), now the *emoji*-s in a file are visible! And if the colon-preface names a la Github web-editing are typed:
+Launching the new `Emacs.app` [as usual](https://github.com/idcrook/i-dotfiles/blob/main/homedir/bin/macos/Emacs.sh), now the *emoji*-s in a file are visible! And if the colon-preface names a la Github web-editing are typed:
 
 ```
 TBD :smi

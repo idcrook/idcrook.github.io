@@ -53,7 +53,7 @@ Once the IR receiver is wired up to the Arduino, and the `IRrecvDump` sketch is 
 2. Looking at Arduino Serial Monitor to get the code corresponding to that button
 3. Transcribing the code into a LIRC daemon .conf file.
 
-I have a repo with this receiver's remote, [RM-AAU190](https://github.com/idcrook/homespun_lirc_codes/blob/master/remotes/sony/RM-AAU190.md), along with other remote controls and their corresponding codes / config files.
+I have a repo with this receiver's remote, [RM-AAU190](https://github.com/idcrook/homespun_lirc_codes/blob/main/remotes/sony/RM-AAU190.md), along with other remote controls and their corresponding codes / config files.
 
  - [LIRC codes repo](https://github.com/idcrook/homespun_lirc_codes){: target="_blank" }
 
@@ -152,7 +152,7 @@ sudo apt-get install lirc
 
 I have captured the full set of steps I used along with proper snippets for system config files in [raspi-receiver-remote-control](https://github.com/idcrook/raspi-receiver-remote-control) GitHub repo.
 
-For example, there is an [INSTALL.md](https://github.com/idcrook/raspi-receiver-remote-control/blob/master/doc/INSTALL.md) in that repo. I also include additional details on the transmitter circuit and other electrical components in my implementation. The main README in that repo touches on that.
+For example, there is an [INSTALL.md](https://github.com/idcrook/raspi-receiver-remote-control/blob/main/doc/INSTALL.md) in that repo. I also include additional details on the transmitter circuit and other electrical components in my implementation. The main README in that repo touches on that.
 
 I created some python scripts that simplify or script IR commands. Here's a taste of one of them
 

@@ -80,6 +80,6 @@ kubectl get all --namespace=kube-system
 kubectl get all --namespace=kube-system -o wide
 ```
 
-I maintain in a Git repository my [homespun configs](https://github.com/idcrook/kubernetes-homespun) for a kubernetes cluster I run on my home network. [RUN.md](https://github.com/idcrook/kubernetes-homespun/blob/master/RUN.md) there shows the services I use.
+I maintain in a Git repository my [homespun configs](https://github.com/idcrook/kubernetes-homespun) for a kubernetes cluster I run on my home network. [RUN.md](https://github.com/idcrook/kubernetes-homespun/blob/main/RUN.md) there shows the services I use.
 
 I am a fan of [traefik](https://traefik.io/) a "cloud native edge router" which has Let's Encrypt support for HTTPS and great kubernetes support built-in. It let's me easily expose services to Internet over HTTPS. Definitely recommend.

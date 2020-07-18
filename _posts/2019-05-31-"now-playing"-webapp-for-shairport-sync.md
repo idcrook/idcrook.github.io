@@ -16,7 +16,7 @@ I was able to create a useful webapp in a couple days -- gotta love MQTT! The si
 Ingredients of the recipe
 -------------------------
 
-As outlined in the [app's README](https://github.com/idcrook/shairport-sync-mqtt-display/blob/master/python-flask-socketio-server/README.md) there are four main requirements to run the app:
+As outlined in the [app's README](https://github.com/idcrook/shairport-sync-mqtt-display/blob/main/python-flask-socketio-server/README.md) there are four main requirements to run the app:
 
 1. **AirPlay®** such as from iTunes® or the Music app in iOS™
 2. **`shairport-sync` (with MQTT support)** as an AirPlay® receiver
@@ -34,7 +34,7 @@ The Webapp
 
 ![web app screencap >]
 
-There are full instructions in the [install section](https://github.com/idcrook/shairport-sync-mqtt-display/blob/master/python-flask-socketio-server/README.md#install) of the README, including pre-reqs and dependencies, for installing the webserver. I'll defer to those.
+There are full instructions in the [install section](https://github.com/idcrook/shairport-sync-mqtt-display/blob/main/python-flask-socketio-server/README.md#install) of the README, including pre-reqs and dependencies, for installing the webserver. I'll defer to those.
 
 There's an [example config file] in the `yaml` format.
 
@@ -75,11 +75,11 @@ The [socket.io Javascript Client](https://github.com/socketio/socket.io-client) 
 <i id="f1">1</i>: Trademarks are the respective property of their owners.[⤸](#a1)
 
 
-[created an app]: https://github.com/idcrook/shairport-sync-mqtt-display/tree/master/python-flask-socketio-server
+[created an app]: https://github.com/idcrook/shairport-sync-mqtt-display/tree/main/python-flask-socketio-server
 
 [open-source]: https://github.com/idcrook/shairport-sync-mqtt-display
 
-[example config file]: https://github.com/idcrook/shairport-sync-mqtt-display/blob/master/python-flask-socketio-server/config.example.yaml
+[example config file]: https://github.com/idcrook/shairport-sync-mqtt-display/blob/main/python-flask-socketio-server/config.example.yaml
 
 
 [demo screencap]: /images/now_playing_iphone_framed.png "Hero shot in iPhone frame of Now Playing webapp"
