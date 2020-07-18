@@ -66,7 +66,7 @@ So, ARMed with this Linux knowledge, the build now is successful (from HEAD of d
 
 ```shell
 swift build -c release --disable-sandbox --enable-test-discovery
-mv .build/release/vapor /usr/local/bin
+# mv .build/release/vapor /usr/local/bin
 sudo cp -av .build/release/vapor /usr/local/bin/
 whereis vapor
 # vapor: /usr/local/bin/vapor
