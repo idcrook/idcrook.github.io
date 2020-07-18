@@ -11,7 +11,7 @@ Using a Raspberry Pi 4 running 64-bit Ubuntu 20.04 (`aarch64` a.k.a. `arm64`)
 
 ## Install swift 5.2.4 for aarch64 
 
-Was simple, using the instructions and pre-built packages available at https://github.com/futurejones/swift-arm64
+Was simple, using the instructions and pre-built packages available at [https://github.com/futurejones/swift-arm64](https://github.com/futurejones/swift-arm64)
 
 ```shell
 curl -s https://packagecloud.io/install/repositories/swift-arm/release/script.deb.sh | sudo bash
@@ -52,7 +52,7 @@ The `error: missing LinuxMain.swift file in the Tests directory` comes from `vap
 
 Fortunately it can still be built. And it is already correct in the docs to build the toolbox..
 
-https://docs.vapor.codes/4.0/install/linux/
+[https://docs.vapor.codes/4.0/install/linux/](https://docs.vapor.codes/4.0/install/linux/)
 
 ```shell
 git clone https://github.com/vapor/toolbox.git
@@ -104,6 +104,7 @@ vapor build
     [1412/1412] Linking Run
     Project built.
 
+## And run the server
 
 ```shell
 vapor run serve
