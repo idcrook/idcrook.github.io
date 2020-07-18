@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Vapor 4 on Raspberry Pi 4 With Aarch64 Swift 5.2
+title: Vapor 4 on Raspberry Pi 4 With aarch64 Swift 5.2
 date: 2020-07-18
 mathjax: False
 comments: False
 image: /images/2020-07-17-vapor4_raspberrypi.png)
 ---
-
-# Vapor 4 on Raspberry Pi 4 with aarch64 Swift 5.2
 
 Using a Raspberry Pi 4 running 64-bit Ubuntu 20.04 (`aarch64` a.k.a. `arm64`)
 
@@ -31,21 +29,23 @@ The "simple" build command I found in an earlier examples on the web didn't work
 ```
 $ swift build -c release
 ```
-    > Fetching https://github.com/tanner0101/mustache.git
-    > Fetching https://github.com/vapor/console-kit.git
-    > Fetching https://github.com/jpsim/Yams.git
-    > Fetching https://github.com/apple/swift-nio.git
-    > Fetching https://github.com/apple/swift-log.git
-    > Cloning https://github.com/apple/swift-nio.git
-    > Resolving https://github.com/apple/swift-nio.git at 2.19.0
-    > Cloning https://github.com/apple/swift-log.git
-    > Resolving https://github.com/apple/swift-log.git at 1.4.0
-    > Cloning https://github.com/tanner0101/mustache.git
-    > Resolving https://github.com/tanner0101/mustache.git at 0.1.1
-    > Cloning https://github.com/vapor/console-kit.git
-    > Resolving https://github.com/vapor/console-kit.git at 4.2.0
-    > Cloning https://github.com/jpsim/Yams.git
-    > Resolving https://github.com/jpsim/Yams.git at 2.0.0
+    Fetching https://github.com/tanner0101/mustache.git
+    Fetching https://github.com/vapor/console-kit.git
+    Fetching https://github.com/jpsim/Yams.git
+    Fetching https://github.com/apple/swift-nio.git
+    Fetching https://github.com/apple/swift-log.git
+    Cloning https://github.com/apple/swift-nio.git
+    Resolving https://github.com/apple/swift-nio.git at 2.19.0
+    Cloning https://github.com/apple/swift-log.git
+    Resolving https://github.com/apple/swift-log.git at 1.4.0
+    Cloning https://github.com/tanner0101/mustache.git
+    Resolving https://github.com/tanner0101/mustache.git at 0.1.1
+    Cloning https://github.com/vapor/console-kit.git
+    Resolving https://github.com/vapor/console-kit.git at 4.2.0
+    Cloning https://github.com/jpsim/Yams.git
+    Resolving https://github.com/jpsim/Yams.git at 2.0.0
+    error: missing LinuxMain.swift file in the Tests directory
+
 > **error: missing LinuxMain.swift file in the Tests directory**
 
 The `error: missing LinuxMain.swift file in the Tests directory` comes from `vapor/console-kit` not having that file.
@@ -85,25 +85,24 @@ vapor build
 # ... with start with fetching and building dependencies in Package.swift
 ```
 
-> Building project...
-> Fetching https://github.com/vapor/vapor.git
-> Fetching https://github.com/apple/swift-nio.git
-> Fetching https://github.com/apple/swift-nio-ssl.git
-> Fetching https://github.com/swift-server/swift-backtrace.git
-> Fetching https://github.com/apple/swift-crypto.git
-> Fetching https://github.com/apple/swift-metrics.git
-> Fetching https://github.com/vapor/websocket-kit.git
-> Fetching https://github.com/apple/swift-nio-http2.git
-> Fetching https://github.com/vapor/async-kit.git
-> Fetching https://github.com/apple/swift-log.git
-> Fetching https://github.com/vapor/console-kit.git
-> Fetching https://github.com/vapor/routing-kit.git
-> Fetching https://github.com/swift-server/async-http-client.git
-> Fetching https://github.com/apple/swift-nio-extras.git
-> ...
-> [1412/1412] Linking Run
-
-> Project built.
+    Building project...
+    Fetching https://github.com/vapor/vapor.git
+    Fetching https://github.com/apple/swift-nio.git
+    Fetching https://github.com/apple/swift-nio-ssl.git
+    Fetching https://github.com/swift-server/swift-backtrace.git
+    Fetching https://github.com/apple/swift-crypto.git
+    Fetching https://github.com/apple/swift-metrics.git
+    Fetching https://github.com/vapor/websocket-kit.git
+    Fetching https://github.com/apple/swift-nio-http2.git
+    Fetching https://github.com/vapor/async-kit.git
+    Fetching https://github.com/apple/swift-log.git
+    Fetching https://github.com/vapor/console-kit.git
+    Fetching https://github.com/vapor/routing-kit.git
+    Fetching https://github.com/swift-server/async-http-client.git
+    Fetching https://github.com/apple/swift-nio-extras.git
+    ...
+    [1412/1412] Linking Run
+    Project built.
 
 
 ```shell
@@ -138,9 +137,10 @@ curl -I localhost:8080/hello
 ```
 
 > HTTP/1.1 200 OK
-> content-type: text/plain; charset=utf-8
-> content-length: 13
-> connection: keep-alive
-> date: Sat, 18 Jul 2020 02:23:11 GMT
+
+    content-type: text/plain; charset=utf-8
+    content-length: 13
+    connection: keep-alive
+    date: Sat, 18 Jul 2020 02:23:11 GMT
 
 ![Vapor Server running](/images/2020-07-17-vapor4_raspberrypi.png)
