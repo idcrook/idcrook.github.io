@@ -3,13 +3,24 @@
 
 Lives at [https://idcrook.github.io/](https://idcrook.github.io/)  -\> [https://github.crookster.org/](https://github.crookster.org/)
 
+Relies on GitHub infrastructure to generate the output from `jekyll` and serve.
+
+## Building and generating locally
+
+See [UsingDockerToServe.md](UsingDockerToServe.md)
+
 ## Resources
 
-Used [jekyll-now](https://github.com/barryclark/jekyll-now/) as a starting point
+Used [jekyll-now](https://github.com/barryclark/jekyll-now/) as a starting point originally
 
-## macOS jekyll
+<details>
+  <summary>Details on running jekyll directly on macOS</summary>
 
-```
+**not recommended**
+
+### macOS jekyll
+
+```shell
 brew install rbenv ruby-build
 rbenv install 2.5.1
 rbenv global 2.5.1
@@ -27,7 +38,9 @@ bundle exec jekyll serve
 
 `gem install ...` actually provided the following caommands in warning to fix them
 
-```
+```shell
 gem pristine commonmarker --version 0.17.9
 gem pristine nokogiri --version 1.8.2
 ```
+
+</details>
