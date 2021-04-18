@@ -15,7 +15,7 @@ github:
   license:
     name: MIT
   source:
-    branch: "master"
+    branch: "main"
     path: "/"
   repository_url: "https://github.com/idcrook/idcrook.github.io"
 

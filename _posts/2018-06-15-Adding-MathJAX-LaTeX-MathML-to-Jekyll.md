@@ -74,5 +74,5 @@ $$ R_{\mu \nu} - \frac{1} {2}Rg_{\mu \nu} + \Lambda g_{\mu \nu} = \frac{8\pi G} 
 $$ R_{\mu \nu} - \frac{1} {2}Rg_{\mu \nu} + \Lambda g_{\mu \nu} = \frac{8\pi G} {c^4}T_{\mu \nu} $$
 ```
 
-[^1]: [mathjax.html](https://github.com/idcrook/idcrook.github.io/blob/master/_includes/mathjax.html){: target="_blank"}
-[^2]: [MathJaxLocal.js](https://github.com/idcrook/idcrook.github.io/blob/master/assets/js/MathJaxLocal.js){: target="_blank"}
+[^1]: [mathjax.html](https://github.com/idcrook/idcrook.github.io/blob/main/_includes/mathjax.html){: target="_blank"}
+[^2]: [MathJaxLocal.js](https://github.com/idcrook/idcrook.github.io/blob/main/assets/js/MathJaxLocal.js){: target="_blank"}
