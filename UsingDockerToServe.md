@@ -69,3 +69,14 @@ docker run --rm \
 
 open http://0.0.0.0:4000
 ```
+
+#### Docker in macOS on Apple Silicon
+
+**NOTE**: 2021-Apr-18 **::** Using `docker` from _Docker Desktop for Apple Silicon_ will display a warning like below about `jekyll` image architecture. It runs fine, albeit mucher slower than native, in emulation.
+
+> Status: Downloaded newer image for jekyll/jekyll:3.8
+
+> WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+
+
+See [Docker Desktop for Apple silicon | Docker Documentation](https://docs.docker.com/docker-for-mac/apple-silicon/) page, which mentions its `--platform linux/amd64` option to run an Intel image under emulation.
