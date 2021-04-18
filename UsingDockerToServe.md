@@ -67,8 +67,10 @@ docker run --rm \
   jekyll serve --force_polling
 
 
-open http://0.0.0.0:4000
 ```
+
+now can open http://0.0.0.0:4000 to see the generated site.
+
 
 #### Docker in macOS on Apple Silicon
 

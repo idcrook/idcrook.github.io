@@ -43,7 +43,7 @@ I use a [homespun ***Kubernetes***](https://github.com/idcrook/kubernetes-homesp
 ### 3D Print designs
 
 Github repo: [idcrook/psychic-winner: Designs for 3D printering (objects, source files)](https://github.com/idcrook/psychic-winner){: target="_blank"}
--	for example: [Bicycle and Car iPhone 6 Plus Mount family](https://github.com/idcrook/psychic-winner/blob/master/iphone_6plus_mount_family/README.md){: target="_blank" }
+-	for example: [Bicycle and Car iPhone 6 Plus Mount family](https://github.com/idcrook/psychic-winner/blob/main/iphone_6plus_mount_family/#readme){: target="_blank" }
 
 More designs on [thingiverse account](http://www.thingiverse.com/dpc/designs){: target="_blank"}
 
