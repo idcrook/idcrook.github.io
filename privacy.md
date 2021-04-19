@@ -12,9 +12,13 @@ This website is powered by Jekyll, Google Analytics, and Disqus and is hosted on
 
 This website uses Google Analytics. This happens only if you approve third party cookies and scripts. However, we have taken actions to mitigate some aspects of their tracking. We have configured Google Analytics to anonymize IP addresses.
 
-<!-- uses TLS. agreed to a Data Processing Amendment -->
-
+<!-- ALSO: Use TLS. Agreed to a Data Processing Amendment -->
 
 ### Disqus
 
-TBD
+This website uses Discus for comments. This happens only if you approve third party cookies and scripts, and the comments have been enabled for a particular page.  Site Admin Settings for this website has turned *OFF* the following:
+
+- [ ] &nbsp; Tracking - Enable anonymous cookie targeting for your site's visitors.
+- [ ] &nbsp; Affiliate links - Automatically append merchant codes to product links on your site.
+
+Please refer to [Disqus Privacy Policy](https://help.disqus.com/en/articles/1717103-disqus-privacy-policy) (redirected from [this link](https://help.disqus.com/customer/portal/articles/466259-privacy-policy)), updated _April 12, 2021_, for _Disqus_ privacy policy. You may additionally specifically _Opt Out_ of **Disqus Data Sharing Settings** [here](https://disqus.com/data-sharing-settings/).
