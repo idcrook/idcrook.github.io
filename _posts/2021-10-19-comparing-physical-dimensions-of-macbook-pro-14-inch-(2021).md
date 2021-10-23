@@ -27,25 +27,41 @@ Dimensions
 
 MacBook Pro 14-Inch (2021) ![MacBook Pro 14-inch (2021) image <>](/images/97969f70-303a-11ec-9fff-50d91433effd.cf.jpg "MacBook Pro 14-inch (2021) image")
 
+Table comparing dimensions with nearest to new 14-inch MacBook Pro **bolded**:
+
 | Model                            | Height             | Width                | Depth               | Weight                 |
 |----------------------------------|--------------------|----------------------|---------------------|------------------------|
 | 13-inch MacBook Air (2010)       | 0.68 (1.7 cm)      | 12.8 (32.5 cm)       | 8.94 (22.7 cm)      | 2.9 lbs (1.32 kg)      |
 | 13-inch MacBook Pro (Early 2015) | 0.71 (1.8 cm)      | **12.53 (31.4 cm)**  | **8.62 (21.9 cm)**  | **3.48 lbs (1.58 kg)** |
 | 13-inch MacBook Pro (M1, 2020)   | **0.61 (1.56 cm)** | 11.97 (30.41 cm)     | 8.36 (21.24 cm)     | 3.0 lbs (1.4 kg)       |
-| **14-inch MacBook Pro (2021)**   | **0.61 (1.55 cm)** | **12.31 (31.26 cm)** | **8.71 (22.12 cm)** | **3.5 lb (1.6 kg)**    |
+| *14-inch MacBook Pro (2021)*   | **0.61 (1.55 cm)** | **12.31 (31.26 cm)** | **8.71 (22.12 cm)** | **3.5 lb (1.6 kg)**    |
 
-Table comparing dimensions with closest matching to new 14-inch MacBook Pro **bolded**.
+The *closest model by overall size and weight* is the **2015 13-inch MacBook Pro**, and the new 14-inch model is 2.5 mm *thinner* ("Height" in table) than it.
 
-The *nearest model in the comparisons by overall size and weight* is the **2015 13-inch MacBook Pro**, and the new 14-inch model is 2.5 mm *thinner* ("Height" in table) than it. In fact the listed *Height* (laptop thickness), *Width* (chassis along display width) and *Depth* (chassis along display height) for the 2015 MBP are all within 2.5 mm differences, which is less than a tenth of an inch.
+| Model                            | Height  | Width    | Depth   |
+|----------------------------------|---------|----------|---------|
+| 13-inch MacBook Air (2010)       | +1.5 mm | +12.4 mm | +5.8 mm |
+| 13-inch MacBook Pro (Early 2015) | +2.5 mm | +1.4 mm  | -2.2 mm |
+| 13-inch MacBook Pro (M1, 2020)   | +0.1 mm | -8.5 mm  | -8.8 mm |
+| *14-inch MacBook Pro (2021)*   | --      | --       | --      |
 
-Many cases or sleeves or backpacks that could accomodate a 2015-era 13-inch MBP should handle the new 2021 14-inch MBP without any issues.
+In fact the listed *Height* (laptop thickness), *Width* (chassis along display width) and *Depth* (chassis along display height) for the 2015 MBP are all within **2.5 mm** differences, which is less than a tenth of an inch. Many cases or sleeves or backpacks that could accomodate a 2015-era 13-inch MBP should handle the new 2021 14-inch MBP without any issues.
+
+And the weight of the new 2021 14-inch model is also the same as the 2015 13-inch model:
+
+| Model                            | Weight   |
+|----------------------------------|----------|
+| 13-inch MacBook Air (2010)       | -0.6 lb  |
+| 13-inch MacBook Pro (Early 2015) | -0.02 lb |
+| 13-inch MacBook Pro (M1, 2020)   | -0.5 lb  |
+| *14-inch MacBook Pro (2021)*   | --       |
 
 Display
 -------
 
 | Model   | 2010 13-inch MBA | 2015 13-inch MBP | 2020 M1 13-inch MBP | 2021 14-inch MBP |
 |---------|------------------|------------------|---------------------|------------------|
-| Display | 13.3-inch        | 13.3-inch        | 13.3-inch           | **14.2-inch**    |
+| Display | 13.3 inches      | 13.3 inches      | 13.3 inches         | **14.2 inches**  |
 
 The new 2021 14-inch model manages to fit its Liquid Retina display that is larger diagonally by almost a full inch (0.9 inch) into a chassis that is similar in size to older *13-inch* models. Have you heard the good news of **"The Notch"**?
 
@@ -54,39 +70,40 @@ Model Comparisons to new 14-inch MacBook Pro
 
 ### 13-inch MacBook Pro (M1, 2020)
 
-The M1 13-inch MacBook Pro from 2020 is as thin as the new 14-inch model, but its smaller overall display width allows its chassis to be 8.5 mm less wide vs. the 14-inch model.
+The M1 13-inch MacBook Pro from 2020 is as thin as the new 14-inch model, but its smaller overall display width allows its chassis to be ~8.5 mm less wide and tall vs. the 14-inch model.
 
 13-inch MacBook Pro (M1, 2020) ![13-inch MacBook Pro (M1, 2020) <>](/images/71gD8WdSlaL._AC_SL1500__sm1.jpg "13-inch MacBook Pro (M1, 2020)")
 
 ### 13-inch MacBook Pro (2015)
 
-The MacBook Pro models from 2015 have become a collector's item since they were prior to the "Touch Bar" and re-designed key switches keyboard in 2016 that started a dark ages for many users of MacBook Pro-s. As it happens, its chassis is about the same size and weight of the new 2021 14-inch MacBook Pro.
+The MacBook Pro models from 2015 have become a collector's item since they were prior to the "Touch Bar" and re-designed key switches keyboard found starting in 2016 models that started a dark ages for many MacBook Pro-s users. As it happens, its chassis has about the same footprint (for both size and weight) of the new 2021 14-inch MacBook Pro.
 
 13-inch MacBook Pro (2015) ![13-inch MacBook Pro (2015) <>](/images/macbook-pro-early-2015-13in-device.jpg "13-inch MacBook Pro (2015)")
 
 ### 13-inch MacBook Air (2010)
 
-The trend-setting 2010 MacBook Air had quite a large bezel around its non-Retina screen, which adds to its chassis dimensions when compared to recent models in the same size class. It was even thicker, likely due to the packaging and thermal solutions required for its novel (at the time) thinner-package Intel processors.
+The trend-setting 2010 MacBook Air had quite a large bezel around its non-Retina screen, which adds to its chassis dimensions when compared to recent models in the same size class. It was also even thicker, likely due to the packaging and thermal solutions required for its novel (at the time) thinner-package Intel processors.
 
 13-inch MacBook Air (2010) ![13-inch MacBook Air (2010) <>](/images/macbook-air-2009-2010-13in-device.jpg "13-inch MacBook Air (2010)")
 
 16-inch MacBook Pro (2021) versus 17-inch MacBook Pro (Early 2008)
 ------------------------------------------------------------------
 
-As a curious point of reference, there were once 17-inch MacBook Pro-s sold. And their feet were visible in product shots. One of its display options "17-inch (diagonal) antiglare TFT widescreen LED backlit display with support for millions of colors" with supported resolutions: "1920 by 1200 (native)".
+As a curious point of reference, there were once 17-inch MacBook Pro-s sold. And their feet were visible in product shots. Its highest resolution display option was "17-inch (diagonal) antiglare TFT widescreen LED backlit display with support for millions of colors" with supported resolutions: "1920 by 1200 (native)".
 
 MacBook Pro (17-inch, Early 2008) ![MacBook Pro (17-inch, Early 2008) <>](/images/macbook-pro-early-2008-17in-device.jpg "MacBook Pro (17-inch, Early 2008)")
 
-| Dimension                         | Height             | Width                 | Depth                 | Weight               | Display   |
-|-----------------------------------|--------------------|-----------------------|-----------------------|----------------------|-----------|
-| MacBook Pro (17-inch, Early 2008) | 1.0 inch (2.59 cm) | 15.4 inches (39.2 cm) | 10.4 inches (26.5 cm) | 6.8 pounds (3.08 kg) | 17.0 inch |
-| MacBook Pro (16-inch, 2021)       | 0.66 (1.68 cm)     | 14.01 (35.57 cm)      | 9.77 (24.81 cm)       | 4.7 lbs (2.1 kg)     | 16.2 inch |
+| Dimension                         | Height             | Width                 | Depth                 | Weight               | Display     |
+|-----------------------------------|--------------------|-----------------------|-----------------------|----------------------|-------------|
+| MacBook Pro (17-inch, Early 2008) | 1.0 inch (2.59 cm) | 15.4 inches (39.2 cm) | 10.4 inches (26.5 cm) | 6.8 pounds (3.08 kg) | 17.0 inches |
+| MacBook Pro (16-inch, 2021)       | 0.66 (1.68 cm)     | 14.01 (35.57 cm)      | 9.77 (24.81 cm)       | 4.7 lbs (2.1 kg)     | 16.2 inches |
 
-So the new 16-inch MacBook Pro's display comes within 0.8 inch of the thirteen-years older 17-inch MacBook Pro's display, but it trims off 2.1 pounds (almost 1.0 kg) weight -- over 30%.
+The new 16-inch MacBook Pro trims off 2.1 pounds (1.0 kg) -- over 30% lighter -- compared to 2008 17-inch model.
 
-And it's >30% thinner.
+And it's close to one-and-a-half inches less wide along the display width, over half-an-inch less along display height direction, while coming within 0.8 inch of the thirteen-years older 17-inch MacBook Pro's display active area.
 
-And it's over a whole inch less wide along the display width, and over half-an-inch less tall along the display height.
+And it's over 30% thinner (but alas, without a DVD drive built-in).
+
 
 Sources
 -------
