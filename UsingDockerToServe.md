@@ -17,7 +17,6 @@ In `_config.yml`
 theme: jekyll-theme-primer
 ```
 
-
 ### `Gemfile` to support github-pages and theme
 
 Create `Gemfile` (not committed to git clone)
@@ -35,14 +34,16 @@ gem "github-pages", group: :jekyll_plugins
 
 If `jekyll build` below has the following error, it's likely because you did not create your `Gemfile`
 
-    jekyll 3.8.6 | Error:  The jekyll-theme-primer theme could not be found.
+```
+jekyll 3.8.6 | Error:  The jekyll-theme-primer theme could not be found.
+```
 
+Commands
+--------
 
-## Commands
-
-- assumes docker is installed and runnable by non-root user
-- assumes you created a `Gemfile` (see above)
-- assumes git clone at specified path
+-	assumes docker is installed and runnable by non-root user
+-	assumes you created a `Gemfile` (see above)
+-	assumes git clone at specified path
 
 ```bash
 cd ~/projects/webdev/idcrook.github.io
@@ -65,20 +66,6 @@ docker run --rm \
   -it  -p 4000:4000 \
   jekyll/jekyll:$JEKYLL_VERSION \
   jekyll serve --force_polling
-
-
 ```
 
 now can open http://0.0.0.0:4000 to see the generated site.
-
-
-#### Docker in macOS on Apple Silicon
-
-**NOTE**: 2021-Apr-18 **::** Using `docker` from _Docker Desktop for Apple Silicon_ will display a warning like below about `jekyll` image architecture. It runs fine, albeit mucher slower than native, in emulation.
-
-> Status: Downloaded newer image for jekyll/jekyll:3.8
-
-> WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
-
-
-See [Docker Desktop for Apple silicon | Docker Documentation](https://docs.docker.com/docker-for-mac/apple-silicon/) page, which mentions its `--platform linux/amd64` option to run an Intel image under emulation.
