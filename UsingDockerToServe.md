@@ -25,7 +25,8 @@ Create `Gemfile` (not committed to git clone)
 source 'https://rubygems.org'
 
 # GH pages dependency (3.9.0)
-gem "jekyll", "~> 3.9.1"
+#  BTW, using "3.9.1" here -> build dependency error, 3.9.0 does not
+gem "jekyll", "~> 3.9"
 
 # https://github.com/github/pages-gem
 gem "github-pages", group: :jekyll_plugins
