@@ -45,13 +45,11 @@ This annoyance can be circumvented by stopping the docker run and re-running it 
 Docker Desktop 4.6 for Mac
 --------------------------
 
-One other thing related to macOS Docker performance is the `VirtioFS` layer added very recently to Docker Desktop for Mac.
-
-Via https://docs.docker.com/desktop/mac/#experimental-features: "Enable VirtioFS"
-
-It's still classified as *Experimental* but it promises great improvements for file consistency across host/container files. Enabling it on an Intel silicon Mac requires macOS 12.3, so it's all quite fresh.
+One other thing related to macOS Docker performance is the `VirtioFS` layer added very recently to Docker Desktop for Mac. It's still classified as *Experimental* but it promises great improvements for file consistency across host/container files. Enabling it on an Intel silicon Mac requires macOS 12.3, so it's all quite fresh.
 
 ![enabling Virtiofs <>](/images/enabling-virtiofs-macos.png "Instructions for enabling Virtiofs in Docker Desktop")
+
+Via <https://docs.docker.com/desktop/mac/#experimental-features>: "Enable VirtioFS"
 
 [Speed boost achievement unlocked on Docker Desktop 4.6 for Mac - Docker](https://www.docker.com/blog/speed-boost-achievement-unlocked-on-docker-desktop-4-6-for-mac/)
 
