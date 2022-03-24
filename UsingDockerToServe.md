@@ -24,19 +24,20 @@ Create `Gemfile` (not committed to git clone)
 ```ruby
 source 'https://rubygems.org'
 
-gem "github-pages", group: :jekyll_plugins
-# following is a workaround for
-#     jekyll 3.8.5 | Error:  uninitialized constant Faraday::Error::ClientError
-#     Did you mean?  Faraday::ClientError
+# GH pages dependency (3.9.0)
+gem "jekyll", "~> 3.9.1"
 
-# gem 'faraday', '0.17.3'
+# https://github.com/github/pages-gem
+gem "github-pages", group: :jekyll_plugins
 ```
 
-If `jekyll build` below has the following error, it's likely because you did not create your `Gemfile`
+If `jekyll build` below has something like the following error, it's likely because you did not create your `Gemfile`
 
 ```
 jekyll 3.8.6 | Error:  The jekyll-theme-primer theme could not be found.
 ```
+
+There's still not a 3.9 image available, but using the jekyll-3.8 Docker image updated to 3.9 using Gemfile seems to work fine.
 
 Commands
 --------
@@ -55,9 +56,33 @@ docker run --rm \
   --volume="$PWD/vendor/bundle:/usr/local/bundle" \
   -it jekyll/jekyll:$JEKYLL_VERSION \
   jekyll build
+```
 
-# ... Bundled gems are installed into `/usr/local/bundle` in container
+Bundled gems are installed into `/usr/local/bundle` in container
 
+```
+# run as server (rebuilds after changes)
+export JEKYLL_VERSION=3.8
+docker run --rm \
+  --volume="$PWD:/srv/jekyll" \
+  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+  -it \
+  -p 4000:4000 \
+  -p 35729:35729 \
+  jekyll/jekyll:$JEKYLL_VERSION \
+  jekyll serve --incremental --force_polling --livereload
+```
+
+Now can open http://0.0.0.0:4000 to see the generated site.
+
+Diagnostics
+-----------
+
+-	`bundle exec github-pages versions`
+
+as in
+
+```
 # run as server (rebuilds after changes)
 export JEKYLL_VERSION=3.8
 docker run --rm \
@@ -65,7 +90,11 @@ docker run --rm \
   --volume="$PWD/vendor/bundle:/usr/local/bundle" \
   -it  -p 4000:4000 \
   jekyll/jekyll:$JEKYLL_VERSION \
-  jekyll serve --force_polling
+bundle exec github-pages versions
 ```
 
-now can open http://0.0.0.0:4000 to see the generated site.
+See also: https://pages.github.com/versions/
+
+-	`github-pages health-check`
+
+https://github.com/github/pages-health-check
