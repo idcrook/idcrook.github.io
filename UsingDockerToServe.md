@@ -71,16 +71,18 @@ docker run --rm \
   -p 4000:4000 \
   -p 35729:35729 \
   jekyll/jekyll:$JEKYLL_VERSION \
-  jekyll serve --incremental --force_polling --livereload
+  jekyll serve --force_polling --livereload
 ```
 
 Now can open http://0.0.0.0:4000 to see the generated site.
 
-An explicit IP address may be needed instead of `0.0.0.0`, in the case of running in WSL2 Docker on Windows, for example. The following command pipeline will output an URL for `eth0` device in Ubuntu (tested on *WSL2*).
+An explicit IP address for URL may be needed instead of `0.0.0.0`, in the case of running in WSL2 Docker on Windows, for example. The following command pipeline will output an URL for `eth0` device in Ubuntu (tested on *WSL2*).
 
 ```
 echo http://$(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1):4000
 ```
+
+The `--incremental` option to the `jekyll serve` command can be tried to speedup successive site/page generation, but in my experience, it does not properly handle top-level site changes (adding or subtracting or renaming posts, for example)
 
 Diagnostics
 -----------
