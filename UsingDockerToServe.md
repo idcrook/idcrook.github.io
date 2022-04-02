@@ -64,7 +64,6 @@ Bundled gems are installed into `/usr/local/bundle` in container
 ```
 # run as server (rebuilds after changes)
 export JEKYLL_VERSION=3.8
-echo http://$(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1):4000
 docker run --rm \
   --volume="$PWD:/srv/jekyll" \
   --volume="$PWD/vendor/bundle:/usr/local/bundle" \
@@ -77,7 +76,11 @@ docker run --rm \
 
 Now can open http://0.0.0.0:4000 to see the generated site.
 
-  - An explicit IP address may be needed instead of `0.0.0.0`, in case running in WSL2 Docker on Windows, for example.
+An explicit IP address may be needed instead of `0.0.0.0`, in the case of running in WSL2 Docker on Windows, for example. The following command pipeline will output an URL for `eth0` device in Ubuntu (tested on *WSL2*).
+
+```
+echo http://$(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1):4000
+```
 
 Diagnostics
 -----------
