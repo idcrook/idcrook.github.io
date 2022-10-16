@@ -4,7 +4,7 @@ title: Vapor 4 on Raspberry Pi 4 With aarch64 Swift 5.2
 date: 2020-07-18
 mathjax: False
 comments: False
-image: /images/2020-07-17-vapor4_raspberrypi.png)
+image: /images/2020-07-17-vapor4_raspberrypi.png
 ---
 
 Using a Raspberry Pi 4 running 64-bit Ubuntu 20.04 (`aarch64` a.k.a. `arm64`)
@@ -145,3 +145,4 @@ curl -I localhost:8080/hello
     date: Sat, 18 Jul 2020 02:23:11 GMT
 
 ![Vapor Server running](/images/2020-07-17-vapor4_raspberrypi.png)
+
