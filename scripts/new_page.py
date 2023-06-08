@@ -27,6 +27,7 @@ TODAY = datetime.date.today()
 
 @click.command()
 @click.argument('title')  # TITLE required
+@click.help_option('-h', '--help')  # also support '-h'
 @click.option(
     '--mathjax', default=False, is_flag=True, help='Enable mathjax on post.')
 @click.option(
