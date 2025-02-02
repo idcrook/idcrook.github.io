@@ -8,6 +8,8 @@ How?
 
 -	Docker images, and CI builders for Jekyll. [envygeeks/jekyll-docker](https://github.com/envygeeks/jekyll-docker)
 
+Consult also [Setting up a GitHub Pages site with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll)
+
 ### Using a supported theme
 
 In `_config.yml`
@@ -24,9 +26,13 @@ Create `Gemfile` (not committed to git clone)
 ```ruby
 source 'https://rubygems.org'
 
-# GH pages dependency (3.9.0)
+# https://pages.github.com/versions/ - gem "jekyll", "~> 3.10.0"
 #  BTW, using "3.9.1" here -> build dependency error, 3.9.0 does not
 gem "jekyll", "~> 3.9"
+
+# fix for ffi-1.17.1-x86_64-linux-musl requires rubygems version >= 3.3.22, which is incompatible with the current version, 3.0.6
+# https://github.com/ffi/ffi/issues/1103#issuecomment-2617122261
+gem "ffi", "< 1.17.0"
 
 # https://github.com/github/pages-gem
 gem "github-pages", group: :jekyll_plugins
@@ -47,16 +53,25 @@ Commands
 -	assumes you created a `Gemfile` (see above)
 -	assumes git clone at specified path
 
-```bash
+### build docker container, caching gems to local directory
+
+```shell
 cd ~/projects/webdev/idcrook.github.io
 
-# build docker container, caching gems to local directory
 export JEKYLL_VERSION=3.8
+
+docker run --rm \
+  --volume="$PWD:/srv/jekyll" \
+  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+  -it jekyll/jekyll:$JEKYLL_VERSION \
+  bundle install
+
 docker run --rm \
   --volume="$PWD:/srv/jekyll" \
   --volume="$PWD/vendor/bundle:/usr/local/bundle" \
   -it jekyll/jekyll:$JEKYLL_VERSION \
   jekyll build
+
 ```
 
 Bundled gems are installed into `/usr/local/bundle` in container

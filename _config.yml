@@ -33,7 +33,6 @@ defaults:
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
   email: david.crook@gmail.com
   facebook:  # idcrook
   flickr:
@@ -41,12 +40,11 @@ footer-links:
   homepage: https://www.crookster.org
   instagram: dpc
   linkedin:  # davidcrook
+  mastodon: "@idcrook"
   pinterest:
   rss: true
-  twitter: idcrook
-  stackoverflow:  # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/47850/popcnt # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: channel/UCvxiCpuYsfttAuh8A5iCCxg
-  googleplus:  # anything in your profile username that comes after plus.google.com/
 
 # used by jekyll-seo-tag plugin
 twitter:
@@ -59,13 +57,12 @@ google_site_verification: PWPQbEIJ5PwPMsdjZzGgB0JAAalS8_ISAhBU12sMbh0
 social:
   name: David Crook
   links:
-    - https://twitter.com/idcrook
+    - https://mastodon.social/@idcrook
     - https://github.com/idcrook
     - https://www.instagram.com/dpc
     - https://www.linkedin.com/in/davidcrook
     - https://keybase.io/idcrook
     - https://youtube.com/channel/UCvxiCpuYsfttAuh8A5iCCxg
-    - https://www.facebook.com/idcrook
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -127,3 +124,5 @@ exclude:
   - CNAME
   - UsingDockerToServe.md
   - scripts
+  - .venv
+  - requirements.txt
