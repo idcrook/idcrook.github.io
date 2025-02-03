@@ -33,6 +33,7 @@ defaults:
 
 # Includes an icon in the footer for each username you enter
 footer-links:
+  bluesky: idcrook.bsky.social
   email: david.crook@gmail.com
   facebook:  # idcrook
   flickr:
