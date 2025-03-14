@@ -154,3 +154,5 @@ docker run \
 When you execute the `docker run` command, it should pull the latest image as tagged `"pihole/pihole:latest"`
 
 Once the image pulls and starts up, it should appear in Container Station (including logs and network interface mappings) as before.  And the router DHCP assignment can use the same mapping for IP address, since it appears to have the same MAC address as previously.
+
+![Docker container running in QNAP Container Station <>](/images/container_station_running_container_info.png "Docker container running in QNAP Container Station")
