@@ -3,7 +3,7 @@
 """Python script to create a starter template for a blog post."""
 
 __author__ = 'David Crook'
-__copyright__ = 'Copyright 2018'
+__copyright__ = 'Copyright 2018-2025'
 __credits__ = ''
 __license__ = 'MIT'
 __maintainer__ = 'David Crook'
@@ -15,6 +15,11 @@ import re
 from string import Template
 import click  # pip3 install click
 from titlecase import titlecase  # pip3 install titlecase
+
+# python3 -m venv .venv
+# source .venv/bin/activate
+# pip3 install click
+# pip3 install titlecase
 
 SCRIPT_PATH = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_FILEPATH = os.path.join(SCRIPT_PATH, 'new_page.template')
@@ -90,6 +95,10 @@ def sanitize_title_str_for_filename(title_str):
     """Do any string normalization needed for a filename."""
     # lowercase the title string amd switch whitespace to hyphens
     s = re.sub(r"\s+", '-', title_str.lower())
+    # replace slash
+    s = re.sub(r"/", '-', s)
+    # drop question mark
+    s = re.sub(r"\?", '', s)
     # drop apostrophes
     s = re.sub(r"'", '', s)
     return s
