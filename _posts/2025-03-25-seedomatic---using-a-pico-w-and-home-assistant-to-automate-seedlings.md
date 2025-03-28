@@ -9,7 +9,6 @@ image: /images/three_bed_temps.png
 
 I have a vegetable garden and start seedlings indoors during the winter. I recently renovated my automation setup for this to be based in Home Assistant.
 
-
 ## What Do I Need Automation For?
 
 It comes down to temperature control. Seeds germinate best under certain conditions (moisture, temperature, etc.) with the main thing I needed to do was soil temperature control.
@@ -20,6 +19,8 @@ I have seedling tray-sized heat mats. There is no temperature monitoring include
 1. If temperature is above target temperature, turn heat pad **OFF**.
 1. If temperature is below target temperature, turn heat pad **ON**.
 1. Repeat cycle
+
+![Pico W wiring and OLED display <>](/images/yaha_temp_mon_oled_wires_sm1.jpeg "Pico W temperature monitor with optional OLED display")
 
 ### Previous solution: MQTT, Wemo smart outlets and Python script
 
