@@ -44,7 +44,7 @@ I have some tubular connector crimp terminals that happen to closely match the d
 
 ![terminal crimping tool](/images/terminal-crimp-tool_sm5.jpg)
 
-Crimp tool was used, but I found that crush the case/shroud on the tubular bullet connector with a pliers seated the wire in place better.
+Crimp tool was used, but I found that crushing the shroud and metal tube on the tubular bullet connector with a pliers held the wire in place better.
 
 ![12V PC Fan hooked up to USB power supply](/images/usbc-12v-fan-testing_sm1.jpg)
 
